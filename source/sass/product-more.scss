@@ -1,0 +1,34 @@
+.product-more {
+  background-color: var(--basic-white);
+}
+
+.product-more__link {
+  text-decoration: none;
+}
+
+.product-more__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--special-dark-grey-3);
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.product-more__description {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: var(--special-dark-grey);
+}
+
+.product-more__button {
+  color: var(--special-dark-grey);
+  background-color: var(--basic-grey);
+  border: none;
+}

@@ -1,0 +1,43 @@
+.category__wrapper {
+  background-color: var(--basic-white);
+}
+
+.category__list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category__item {
+  background-color: var(--basic-grey);
+}
+
+.category__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.category__description {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special-dark-grey);
+}
+
+.category__link {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--basic-black);
+}

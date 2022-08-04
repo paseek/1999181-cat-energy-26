@@ -1,0 +1,26 @@
+.product {
+  background-color: var(--basic-white);
+}
+
+.product__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: var(--special-dark-grey-2);
+}
+
+.product__link {
+  text-decoration: none;
+}
+
+.product__features {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: var(--special-dark-grey);
+}

@@ -1,0 +1,58 @@
+.example {
+  background-color: var(--special-grey-3);
+}
+
+.example__title {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 40px;
+  color: var(--basic-black);
+  background-color: var(--special-grey-3);
+}
+
+.example-description {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--special-dark-grey);
+}
+
+.stats {
+  background-color: var(--special-grey-3);
+}
+
+.stats__number {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--basic-black);
+}
+
+.stats__description {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  text-align: center;
+  color: var(--special_dark-grey);
+}
+
+.example__summary {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}

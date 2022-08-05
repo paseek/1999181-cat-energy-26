@@ -3,8 +3,8 @@
 @use "visually-hidden.scss";
 @use "variables.scss";
 @use "button.scss";
-@use "main-header.scss";
-@use "main-nav.scss";
+@use "header.scss";
+@use "nav.scss";
 @use "main-container.scss";
 @use "promoscreen.scss";
 @use "category.scss";
@@ -25,4 +25,4 @@
 @use "comment.scss";
 @use "options.scss";
 
-@use "main-footer.scss";
+@use "footer.scss";

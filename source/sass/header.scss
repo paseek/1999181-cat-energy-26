@@ -1,0 +1,16 @@
+.header {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+  padding-top: 10px;
+  position: relative;
+}
+.header__main-logo {
+  display: inline-block;
+  margin-right: 56px;
+  margin-left: 20px;
+  margin-bottom: 18px;
+}
+
+.header__second-logo {
+  display: inline-block;
+}

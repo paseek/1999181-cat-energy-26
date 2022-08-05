@@ -1,4 +1,7 @@
 .main-container {
+  padding-top: 27px;
+  padding-right: 20px;
+  padding-left: 20px;
   background-color: var(--basic-white);
 }
 
@@ -9,4 +12,17 @@
   font-size: 36px;
   line-height: 36px;
   color: var(--basic-black);
+  margin: 0;
+  margin-bottom: 37px;
+}
+
+.main-container__description {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+  margin-bottom: 39px;
 }

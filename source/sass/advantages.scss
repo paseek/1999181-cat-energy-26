@@ -1,3 +1,8 @@
+.advantages__wrapper {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .advantages__title {
   font-family: "Oswald";
   font-style: normal;
@@ -6,6 +11,7 @@
   line-height: 40px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  margin: 0;
 }
 
 .advantages__list {

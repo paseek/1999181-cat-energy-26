@@ -1,16 +1,16 @@
 .promoscreen {
+  min-height: 480px;
   background-color: var(--basic-white);
 }
 
 .promoscreen__wrapper {
-  width: 100%;
-}
-
-.promoscreen__hero-image {
+  width: 320px;
+  height: 302px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero.jpg");
   background-position: top;
   background-repeat: repeat, no-repeat;
-  background-size: auto;
+  background-size: cover;
+  padding-bottom: 27px;
 }
 
 .promoscreen__title {
@@ -21,7 +21,6 @@
   line-height: 36px;
   text-align: center;
   color: var(--basic-white);
-  background-color: rgba(104, 183, 56, 0.85);
 }
 
 .promoscreen__subtitle {
@@ -33,10 +32,21 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--basic-white);
-  background-color: rgba(104, 183, 56, 0.85);
+  margin-bottom: 29px;
+}
+
+.promoscreen__image {
+  display: flex;
+  margin: 0 auto;
 }
 
 .promoscreen__link {
-  margin: 20px;
-  margin-top: 0;
+  display: block;
+  font-size: 14px;
+  // margin: 20px;
+  // margin-top: 0;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 7px 44px;
+
 }

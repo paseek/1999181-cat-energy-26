@@ -1,5 +1,6 @@
 .example {
   background-color: var(--special-grey-3);
+  padding: 25px 20px 40px;
 }
 
 .example__title {
@@ -10,19 +11,32 @@
   line-height: 40px;
   color: var(--basic-black);
   background-color: var(--special-grey-3);
+  margin: 0;
+  margin-bottom: 40px;
 }
 
-.example-description {
+.example__description {
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
   color: var(--special-dark-grey);
+  margin: 0;
+  margin-bottom: 20px;
 }
 
 .stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   background-color: var(--special-grey-3);
+  margin: 0;
+}
+
+.stats__item {
+  display: grid;
+  grid-template-rows: min-content min-content;
+  margin-bottom: 20px;
 }
 
 .stats__number {
@@ -34,6 +48,7 @@
   text-transform: uppercase;
   text-align: center;
   color: var(--basic-black);
+  margin-bottom: 5px;
 }
 
 .stats__description {
@@ -43,7 +58,9 @@
   font-size: 12px;
   line-height: 12px;
   text-align: center;
+  text-transform: lowercase;
   color: var(--special_dark-grey);
+  margin: 0;
 }
 
 .example__summary {

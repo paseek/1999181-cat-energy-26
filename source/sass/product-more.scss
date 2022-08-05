@@ -1,9 +1,18 @@
 .product-more {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   background-color: var(--basic-white);
 }
 
 .product-more__link {
+  display: grid;
   text-decoration: none;
+}
+
+.product-more__icon {
+  margin: 0 auto;
+  margin-bottom: 23px;
 }
 
 .product-more__title {
@@ -15,6 +24,8 @@
   color: var(--special-dark-grey-3);
   text-align: center;
   text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 8px;
 }
 
 .product-more__description {
@@ -25,10 +36,15 @@
   line-height: 16px;
   text-align: center;
   color: var(--special-dark-grey);
+  margin: 0;
+  margin-bottom: 21px;
 }
 
 .product-more__button {
   color: var(--special-dark-grey);
   background-color: var(--basic-grey);
   border: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

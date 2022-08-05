@@ -1,8 +1,30 @@
+.promobox__wrapper {
+  width: 279px;
+  height: 289px;
+  display: flex;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promobox-image.jpg");
+  background-position: top;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: url(../img/promobox-icon.svg);
+    position: absolute;
+    right: 0;
+    left: 0;
+    text-align: center;
+    margin-top: 58px;
+  }
+}
+
 .promobox__link {
   text-decoration: none;
 }
 
 .promobox__description {
+  width: 100%;
   font-family: "Arial";
   font-style: normal;
   font-weight: 400;
@@ -10,5 +32,5 @@
   line-height: 20px;
   text-align: center;
   color: var(--basic-white);
-  background-color: rgba(104, 183, 56, 0.85);
+  margin-top: 186px;
 }

@@ -1,6 +1,7 @@
 @use "fonts.scss";
 @use "colors-variables.scss";
 @use "visually-hidden.scss";
+@use "variables.scss";
 @use "button.scss";
 @use "main-header.scss";
 @use "main-nav.scss";
@@ -11,9 +12,17 @@
 @use "example.scss";
 @use "contacts.scss";
 @use "map.scss";
+@use "catalog.scss";
 @use "products.scss";
 @use "product.scss";
 @use "product-more.scss";
 @use "additional.scss";
 @use "promobox.scss";
+@use "form.scss";
+@use "property.scss";
+@use "program.scss";
+@use "own.scss";
+@use "comment.scss";
+@use "options.scss";
+
 @use "main-footer.scss";

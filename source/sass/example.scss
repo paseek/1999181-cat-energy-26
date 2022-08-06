@@ -26,20 +26,20 @@
   margin-bottom: 20px;
 }
 
-.stats {
+.example__stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
   background-color: var(--special-grey-3);
   margin: 0;
 }
 
-.stats__item {
+.example__stats-item {
   display: grid;
   grid-template-rows: min-content min-content;
   margin-bottom: 20px;
 }
 
-.stats__number {
+.example__stats-number {
   font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -51,7 +51,7 @@
   margin-bottom: 5px;
 }
 
-.stats__description {
+.example__stats-description {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;

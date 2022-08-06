@@ -4,8 +4,8 @@
 }
 
 .promoscreen__wrapper {
-  width: 320px;
-  height: 275px;
+  // width: 320px;
+  min-height: 275px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero.jpg");
   background-position: top;
   background-repeat: repeat, no-repeat;
@@ -14,7 +14,7 @@
 }
 
 .promoscreen__title {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 36px;
@@ -26,7 +26,7 @@
 }
 
 .promoscreen__subtitle {
-  font-family: 'Oswald';
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

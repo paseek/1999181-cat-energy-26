@@ -4,7 +4,7 @@
 }
 
 .form__description {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -20,8 +20,8 @@
 }
 
 .form__program-selection {
-  border-top: 1px solid #D9D9D9;
-  border-bottom: 1px solid #D9D9D9;
+  border-top: 1px solid var(--special-light-grey-2);
+  border-bottom: 1px solid var(--special-light-grey-2);
   margin: 0;
   margin-bottom: 26px;
   padding-top: 22px;

@@ -7,7 +7,7 @@
   display: grid;
   grid-template-columns: max-content auto;
   align-items: center;
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -31,7 +31,7 @@
 }
 
 .property__field::placeholder {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

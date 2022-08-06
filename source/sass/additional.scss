@@ -3,7 +3,7 @@
 }
 
 .additional__title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -23,15 +23,15 @@
   display: grid;
   grid-template-rows: repeat(3, auto);
   padding: 13px 20px 21px;
-  border-top: 1px solid #D9D9D9;
+  border-top: 1px solid var(--special-light-grey-2);
 
   &:last-child {
-    border-bottom: 1px solid #D9D9D9;
+    border-bottom: 1px solid var(--special-light-grey-2);
   }
 }
 
 .additional__item-title {
-  font-family: "Oswald";
+  font-family: "Oswald", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -50,7 +50,7 @@
 }
 
 .additional__item-feature {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -61,7 +61,7 @@
 }
 
 .additional__item-price {
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;

@@ -10,7 +10,7 @@
   position: relative;
 
   &::before {
-    content: url(../img/promobox-icon.svg);
+    content: url("../img/promobox-icon.svg");
     position: absolute;
     right: 0;
     left: 0;
@@ -25,7 +25,7 @@
 
 .promobox__description {
   width: 100%;
-  font-family: "Arial";
+  font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

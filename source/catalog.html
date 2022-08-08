@@ -3,30 +3,32 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <a class="main-header__main-logo" href="index.html">
-      <img class="main-header__main-logo-image" src="../source/img/main-logo-mobile.svg" width="33" height="28"
+  <header class="header">
+    <a class="header__main-logo" href="index.html">
+      <img class="header__main-logo-image" src="/img/main-logo.svg" width="33" height="37"
         alt="Кэт энерджи - магазин питания для котов">
     </a>
-    <a class="main-header__second-logo second-logo" href="index.html">
-      <img class="second-logo__image" src="../source/img/second-logo.svg" width="101" height="18"
+    <a class="header__second-logo second-logo" href="index.html">
+      <img class="second-logo__image" src="/img/second-logo.svg" width="101" height="18"
         alt="Cat energy - все дял ваших котиков">
     </a>
-    <nav class="main-nav">
-      <button class="main-nav__toggle" type="button">
+    <nav class="nav">
+      <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
-      <div class="main-nav__wrapper">
-        <ul class="main-nav__list menu-list">
+      <div class="nav__wrapper">
+        <ul class="nav__list menu-list">
           <li class="menu-list__item">
-            <a class="menu-list__link">Главная</a>
+            <a class="menu-list__link" href="index.html">Главная</a>
           </li>
           <li class="menu-list__item menu-list__item--current">
-            <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="menu-list__link">Каталог продукции</a>
           </li>
           <li class="menu-list__item">
             <a class="menu-list__link" href="form.html">Подбор программы</a>
@@ -35,18 +37,18 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
-    <h1 class="main-container__title">Каталог товаров</h1>
+  <main class="catalog">
+    <h1 class="catalog__title">Каталог товаров</h1>
     <section class="products">
       <h2 class="visually-hidden">Товары серии Cat energy</h2>
       <div class="products__wrapper">
         <ul class="products__list">
           <li class="products__item product">
             <a class="product__link" href="">
-              <img class="product__image" src="../source/img/products/product_01.png" width="140" height="112"
+              <img class="product__image" src="../img/products/product_01.png" width="140" height="112"
                 alt="Корм для котов Cat Energy PRO 500 грамм со вкусом курицы">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
+            <h3 class="product__title">Cat Energy PRO 500 г</h3>
             <dl class="product__features">
               <div class="product__features-item">
                 <dt class="product__features-number">Масса</dt>
@@ -65,10 +67,10 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="">
-              <img class="product__image" src="../source/img/products/product_02.png" width="140" height="112"
+              <img class="product__image" src="../img/products/product_02.png" width="140" height="112"
                 alt="Корм для котов Cat Energy PRO 1000 грамм со вкусом курицы">
-              <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             </a>
+            <h3 class="product__title">Cat Energy PRO 1000 г</h3>
             <dl class="product__features">
               <div class="product__features-item">
                 <dt class="product__features-number">Масса</dt>
@@ -87,10 +89,10 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="">
-              <img class="product__image" src="../source/img/products/product_03.png" width="140" height="112"
+              <img class="product__image" src="../img/products/product_03.png" width="140" height="112"
                 alt="Корм для котов Cat Energy PRO 500 грамм со вкусом рыбы">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
+            <h3 class="product__title">Cat Energy PRO 500 г</h3>
             <dl class="product__features">
               <div class="product__features-item">
                 <dt class="product__features-number">Масса</dt>
@@ -109,10 +111,10 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="">
-              <img class="product__image" src="../source/img/products/product_04.png" width="140" height="112"
+              <img class="product__image" src="../img/products/product_04.png" width="140" height="112"
                 alt="Корм для котов Cat Energy PRO 1000 грамм со вкусом рыбы">
-              <h3 class="product__title">Cat Energy PRO 500 г</h3>
             </a>
+            <h3 class="product__title">Cat Energy PRO 500 г</h3>
             <dl class="product__features">
               <div class="product__features-item">
                 <dt class="product__features-number">Масса</dt>
@@ -131,10 +133,10 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="">
-              <img class="product__image" src="../source/img/products/product_05.png" width="140" height="112"
+              <img class="product__image" src="../img/products/product_05.png" width="140" height="112"
                 alt="Корм для котов Cat Energy SLIM 500 грамм со вкусом гречки">
-              <h3 class="product__title">Cat Energy SLIM 500 г</h3>
             </a>
+            <h3 class="product__title">Cat Energy SLIM 500 г</h3>
             <dl class="product__features">
               <div class="product__features-item">
                 <dt class="product__features-number">Масса</dt>
@@ -153,10 +155,10 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="">
-              <img class="product__image" src="../source/img/products/product_06.png" width="140" height="112"
+              <img class="product__image" src="../img/products/product_06.png" width="140" height="112"
                 alt="Корм для котов Cat Energy SLIM 1000 грамм со вкусом гречки">
-              <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
             </a>
+            <h3 class="product__title">Cat Energy SLIM 1000 г</h3>
             <dl class="product__features">
               <div class="product__features-item">
                 <dt class="product__features-number">Масса</dt>
@@ -175,10 +177,10 @@
           </li>
           <li class="products__item product">
             <a class="product__link" href="">
-              <img class="product__image" src="../source/img/products/product_07.png" width="140" height="112"
+              <img class="product__image" src="../img/products/product_07.png" width="140" height="112"
                 alt="Корм для котов Cat Energy SLIM 500 грамм со вкусом риса">
-              <h3 class="product__title">Cat Energy SLIM 500 г</h3>
             </a>
+            <h3 class="product__title">Cat Energy SLIM 500 г</h3>
             <dl class="product__features">
               <div class="product__features-item">
                 <dt class="product__features-number">Масса</dt>
@@ -197,7 +199,7 @@
           </li>
           <li class="products__item product-more">
             <a class="product-more__link" href="">
-              <svg class="product-more__icon" aria-hidden="true" focusable="false" width="60" height="60"
+              <svg class="product-more__icon" aria-hidden="true" focusable="false" width="30" height="30"
                 viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path stroke="#D3D3D3" stroke-width="2" d="M31 0v60M60 31H0" />
               </svg>
@@ -215,60 +217,76 @@
         <ul class="additional__list">
           <li class="additional__item">
             <h3 class="additional__item-title">Сахарозаменитель</h3>
-            <p class="additional__item-features">1 упаковка (100 г)</p>
-            <p class="additional__item-price">200 Р.</p>
+            <div class="additional__item-features">
+              <p class="additional__item-feature">1 упаковка (100 г)</p>
+              <p class="additional__item-price">200 Р.</p>
+            </div>
             <a class="additional__item-button button" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__item-title">Питьевая вода</h3>
-            <p class="additional__item-features">5 литров</p>
-            <p class="additional__item-price">50 Р.</p>
+            <div class="additional__item-features">
+              <p class="additional__item-feature">5 литров</p>
+              <p class="additional__item-price">50 Р.</p>
+            </div>
             <a class="additional__item-button button" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__item-title">Молоко</h3>
-            <p class="additional__item-features">1 литр</p>
-            <p class="additional__item-price">100 Р.</p>
+            <div class="additional__item-features">
+              <p class="additional__item-feature">1 литр</p>
+              <p class="additional__item-price">100 Р.</p>
+            </div>
             <a class="additional__item-button button" href="#">Заказать</a>
           </li>
           <li class="additional__item">
             <h3 class="additional__item-title">Витамины</h3>
-            <p class="additional__item-features">1 упаковка (30 г)</p>
-            <p class="additional__item-price">300 Р.</p>
+            <div class="additional__item-features">
+              <p class="additional__item-feature">1 упаковка (30 г)</p>
+              <p class="additional__item-price">300 Р.</p>
+            </div>
             <a class="additional__item-button button" href="#">Заказать</a>
           </li>
         </ul>
       </div>
     </section>
-    <section class="catalog-promo">
+    <section class="promobox">
       <h2 class="visually-hidden">Промо баннер</h2>
-      <div class="catalog-promo__wrapper">
-        <a class="catalog-promo__link" href="#">
-          <div class="catalog-promo__icon"></div>
-          <p class="catalog-promo__description">Закажите все и получите чехол для кота в подарок!</p>
-        </a>
-      </div>
+      <a class="promobox__link" href="#">
+        <div class="promobox__wrapper">
+
+          <!-- <img class="promobox__image" src="../img/promobox-image.jpg" width="280" height="290"
+            alt="Кот сидящий в рукзаке на спине хозяйки"> -->
+          <p class="promobox__description">Закажите все <br>и получите чехол для <br>кота в подарок!</p>
+
+        </div>
+      </a>
     </section>
-  </main>
-  <footer class="main-footer">
-    <div class="main-footer__wrapper">
-      <div class="main-footer__contacts contacts">
+    <section class="contacts contacts--grey">
+      <div class="contacts__wrapper">
         <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address address">
           <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
           <p class="address__city">Санкт-Петербург</p>
         </address>
       </div>
-      <div class="main-footer__map">
-        <!-- Тут будет iframe с картой -->
+    </section>
+    <section class="map map--grey">
+      <div class="map__wrapper">
+        <img class="map__image" src="../img/footer-map.jpg" width="320" height="362"
+          alt="Карта с адресом магазина Cat Energy">
       </div>
-      <div class="main-footer__logo second-logo">
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__logo second-logo">
         <a href="index.html">
-          <img class="second-logo__image" src="../source/img/second-logo.svg" width="101" height="18"
+          <img class="second-logo__image" src="../img/second-logo.svg" width="128" height="24"
             alt="Cat energy - все дял ваших котиков">
         </a>
       </div>
-      <div class="main-footer__social social">
+      <div class="footer__social social">
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="https://vk.com">
@@ -305,8 +323,8 @@
           </li>
         </ul>
       </div>
-      <div class="main-footer__copyright copyright">
-        <p class="copyright__text">HTML Academy</p>
+      <div class="footer__copyright copyright">
+        <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
           <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34"
             fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -38,4 +38,9 @@
     display: block;
     position: relative;
   }
+
+  @media (min-width: 1440px) {
+    background-color: transparent;
+    z-index: 1;
+  }
 }

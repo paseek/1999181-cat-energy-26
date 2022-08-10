@@ -1,6 +1,19 @@
 .advantages__wrapper {
   padding-right: 20px;
   padding-left: 20px;
+
+  @media (min-width: 768px) {
+    padding-right: 30px;
+    padding-left: 30px;
+    border-bottom: 1px solid var(--special-light-grey-3);
+    margin-bottom: 43px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-right: 110px;
+    padding-left: 110px;
+    border: none;
+  }
 }
 
 .advantages__title {
@@ -12,14 +25,93 @@
   color: var(--basic-black);
   background-color: var(--basic-white);
   margin: 0;
+  margin-bottom: 40px;
 }
 
 .advantages__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 37px;
+    column-gap: 137px;
+    counter-reset: section;
+  }
+
+  @media (min-width: 1440px) {
+    display: flex;
+  }
 }
 
 .advantages__item {
+  min-height: 60px;
+  margin-bottom: 20px;
+  position: relative;
+
+  &::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: var(--basic-green);
+    margin-bottom: 20px;
+    position: absolute;
+  }
+
+  // &--healthy {
+  //   background-image: url("../img/category-icon-leaf.svg");
+  //   background-position: center;
+  //   background-repeat: no-repeat;
+  // }
+
+  // &--easy {
+  //   content: url("../img/category-icon-leaf.svg");
+  //   position: absolute;
+  //   top: 14px;
+  //   left: 15px;
+  // }
+
+  // &--instead {
+  //   content: url("../img/category-icon-leaf.svg");
+  //   position: absolute;
+  //   top: 14px;
+  //   left: 15px;
+  // }
+
+  // &--fast {
+  //   content: url("../img/category-icon-leaf.svg");
+  //   position: absolute;
+  //   top: 14px;
+  //   left: 15px;
+  // }
+
+  @media (min-width: 768px) {
+    min-height: 280px;
+    margin-bottom: 0;
+
+    &::after {
+      counter-increment: section;
+      content: "" counter(section) "";
+      font-family: "Oswald", sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 280px;
+      line-height: 280px;
+      color: var(--basic-grey);
+      position: absolute;
+      top: -40px;
+      left: 118px;
+      z-index: -1;
+    }
+  }
+}
+
+.advantages__description {
   font-family: "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -27,4 +119,14 @@
   line-height: 18px;
   color: (--special-dark-grey);
   background-color: var(--basic-white);
+  margin: 0;
+  margin-left: 80px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 24px;
+    background-color: transparent;
+    margin: 0;
+    margin-top: 90px;
+  }
 }

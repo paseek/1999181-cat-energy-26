@@ -1,6 +1,6 @@
 @use "fonts.scss";
 @use "variables.scss";
-@use "visually-hidden.scss";
+@use "global.scss";
 @use "button.scss";
 @use "header.scss";
 @use "nav.scss";
@@ -24,6 +24,7 @@
 @use "own.scss";
 @use "comment.scss";
 @use "options.scss";
+@use "address.scss";
 @use "footer.scss";
 @use "social.scss";
 @use "copyright.scss";

@@ -68,6 +68,8 @@
   }
 
   @media (min-width: 1440px) {
-    color: var(--basic-white);
+    &--white {
+      color: var(--basic-white);
+    }
   }
 }

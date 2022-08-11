@@ -7,11 +7,26 @@
   color: var(--basic-black);
   margin: 0;
   margin-bottom: 34px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .options__list {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    column-gap: 123px;
+    grid-template-columns: repeat(auto-fit, 221px);
+  }
+
+  @media (min-width: 1440px) {
+    column-gap: 104px;
+  }
 }
 
 .options__item {
@@ -23,4 +38,9 @@
   text-transform: uppercase;
   color: var(--special-dark-grey);
   margin-bottom: 12px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }

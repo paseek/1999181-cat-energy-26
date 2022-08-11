@@ -1,4 +1,5 @@
 .social__list {
+  width: 132px;
   list-style-type: none;
   padding: 0;
   display: grid;
@@ -7,10 +8,10 @@
   margin: 0;
   padding-top: 20px;
   padding-bottom: 21px;
-}
 
-.social__item {
-  margin-right: 20px;
+  @media (min-width: 768px) {
+    padding: 0;
+  }
 }
 
 .social__item:last-child {

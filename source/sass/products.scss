@@ -1,6 +1,28 @@
+.products {
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0 110px;
+  }
+}
+
 .products__list {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 324px);
+    gap: 60px;
+    justify-content: center;
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-columns: repeat(auto-fill, 245px);
+    gap: 80px;
+  }
 }
 
 .products__item {

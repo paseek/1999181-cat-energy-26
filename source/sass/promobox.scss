@@ -17,6 +17,10 @@
     text-align: center;
     margin-top: 58px;
   }
+
+  @media (min-width: 1440px) {
+    width: 245px;
+  }
 }
 
 .promobox__link {

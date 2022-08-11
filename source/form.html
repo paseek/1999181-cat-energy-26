@@ -43,7 +43,9 @@
     <section class="order-information">
       <h2 class="visually-hidden">Данные кота</h2>
       <form class="order-information__form form" method="post" action="https://echo.htmlacademy.ru">
-        <ul class="form__pet-property property">
+
+        <div class="form__pet-info__wrapper">
+          <ul class="form__pet-property property">
           <li class="property__item">
             <label class="property__label" for="name">Имя:*</label>
             <input class="property__field" type="text" name="name" id="name" placeholder="Барсик" required>
@@ -56,8 +58,8 @@
             <label class="property__label" for="age">Возраст (лет):</label>
             <input class="property__field" type="number" name="age" id="age" placeholder="7">
           </li>
-        </ul>
-        <div class="form__program-selection">
+          </ul>
+          <div class="form__program-selection">
           <ul class="program-list">
             <li class="program-list__item">
               <label class="program-list__control">
@@ -81,19 +83,22 @@
               </label>
             </li>
           </ul>
+          </div>
         </div>
         <div class="form__contacts own">
           <h2 class="own__title">Контактные данные (владельца кота)</h2>
-          <div class="own__item">
-            <label class="own__label" for="email">E-mail:*</label>
-            <input class="own__field contacts__field--email" type="email" name="email" id="email"
-              placeholder="кuklachev@gmail.com" required>
-          </div>
-          <div class="own__item">
-            <label class="own__label" for="phone">Телефон:*</label>
-            <input class="own__field contacts__field--phone" type="tel" name="phone" id="phone"
-              placeholder="8 (960) 900-60-90" required>
-          </div>
+          <div class="owm__item-wrapper">
+            <div class="own__item">
+              <label class="own__label" for="email">E-mail:*</label>
+              <input class="own__field contacts__field--email" type="email" name="email"  id="email"
+                placeholder="кuklachev@gmail.com" required>
+            </div>
+            <div class="own__item">
+              <label class="own__label" for="phone">Телефон:*</label>
+              <input class="own__field contacts__field--phone" type="tel" name="phone"  id="phone"
+                placeholder="8 (960) 900-60-90" required>
+            </div>
+        </div>
         </div>
         <div class="form__comment comment">
           <h2 class="comment__title">Комментарий</h2>
@@ -138,26 +143,28 @@
         <p class="form__description">* — Обязательные поля</p>
       </form>
     </section>
-    <section class="contacts">
-      <div class="contacts__wrapper">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address address">
-          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__city">Санкт-Петербург</p>
-        </address>
-      </div>
-    </section>
-    <section class="map">
-      <div class="map__wrapper">
-        <img class="map__image" src="../img/footer-map.jpg" width="320" height="362"
-          alt="Карта с адресом магазина Cat Energy">
-      </div>
-    </section>
+    <div class="address">
+      <section class="address__contacts contacts contacts--grey">
+        <div class="contacts__wrapper">
+          <p class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address-city">Санкт-Петербург</p>
+          </address>
+        </div>
+      </section>
+      <section class="address_map map map--grey">
+        <div class="map__wrapper">
+          <img class="map__image" src="../img/footer-map.jpg" width="320" height="362"
+            alt="Карта с адресом магазина Cat Energy">
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__logo second-logo">
-        <a href="index.html">
+        <a href="#">
           <img class="second-logo__image" src="../img/second-logo.svg" width="128" height="24"
             alt="Cat energy - все дял ваших котиков">
         </a>

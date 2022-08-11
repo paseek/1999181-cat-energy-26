@@ -7,6 +7,11 @@
   color: var(--basic-black);
   margin: 0;
   margin-bottom: 37px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .comment__textarea {

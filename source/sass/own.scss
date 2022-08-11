@@ -9,6 +9,14 @@
   margin-bottom: 35px;
 }
 
+.owm__item-wrapper {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .own__item {
   display: grid;
   grid-template-columns: max-content auto;

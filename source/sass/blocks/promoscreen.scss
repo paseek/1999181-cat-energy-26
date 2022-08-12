@@ -6,37 +6,45 @@
 
 .promoscreen__wrapper {
   height: 275px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/hero.jpg");
-  background-position: top;
-  background-repeat: repeat, no-repeat;
-  background-size: cover;
-  padding-top: 27px;
+  position: relative;
+  z-index: 0;
+
+  &::after {
+    content: "";
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/hero.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
 
   @media (min-width: 768px) {
-    background-image: none;
-    position: relative;
+    &::after {
+      background-image: none;
+    }
   }
 
   @media (min-width: 1440px) {
     height: 696px;
 
-    &::before {
-      content: url("../img/hero-big.jpg");
-      position: absolute;
-      top: -79px;
-      right: 0;
-      width: 720px;
-      height: 694px;
-    }
-
     &::after {
       content: "";
-      background-color: rgba(104, 183, 56, 0.85);
+      background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/hero-big.jpg");
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
       position: absolute;
       top: -79px;
       right: 0;
-      width: 720px;
-      height: 694px;
+      width: 50%;
+      height: 100%;
+      z-index: -1;
     }
   }
 }

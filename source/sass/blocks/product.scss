@@ -3,7 +3,8 @@
   grid-template-columns: auto auto;
   grid-template-rows: min-content min-content auto;
   align-items: center;
-  background-color: var(--basic-white);
+  background: linear-gradient(var(--basic-white) 20%, var(--basic-grey) 20% 100%);
+  // background-color: var(--basic-white);
   border-top: 1px solid var(--special-light-grey-2);
   padding: 19px 20px 25px;
   box-sizing: border-box;
@@ -16,15 +17,15 @@
     border: none;
     padding: 8px 36px 39px;
 
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 100%;
-      height: 80%;
-      background-color: var(--basic-grey);
-      z-index: -1;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: 0;
+    //   width: 100%;
+    //   height: 80%;
+    //   background-color: var(--basic-grey);
+    //   z-index: -1;
+    // }
   }
 
   @media (min-width: 1440px) {

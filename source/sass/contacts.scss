@@ -1,10 +1,17 @@
 .contacts {
   background-color: var(--basic-white);
 
+  @media (min-width: 768px) {
+    &--grey {
+      background-color: var(--basic-grey);
+    }
+  }
+
   @media (min-width: 1440px) {
     position: absolute;
     top: 95px;
     left: 110px;
+    background-color: var(--basic-white);
   }
 }
 

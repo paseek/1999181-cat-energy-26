@@ -3,6 +3,14 @@
   padding-bottom: 32px;
 }
 
+.form__pet-info__wrapper {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
 .form__description {
   font-family: "Arial", sans-serif;
   font-style: normal;
@@ -12,6 +20,12 @@
   text-align: center;
   color: var(--basic-black);
   margin: 0;
+
+  @media (min-width: 768px) {
+    display: inline;
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
 
 .form__pet-property {
@@ -44,6 +58,22 @@
 }
 
 .form__button {
+  font-size: 16px;
+  line-height: 20px;
   margin: 0;
   margin-bottom: 21px;
+  padding: 7px 0;
+  min-width: 280px;
+
+  @media (min-width: 768px) {
+    padding: 13px 80px;
+    margin-right: 61px;
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 20px;
+    padding: 13px 223px;
+    margin-right: 81px;
+  }
 }

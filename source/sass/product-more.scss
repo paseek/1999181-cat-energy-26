@@ -3,6 +3,10 @@
   flex-wrap: wrap;
   justify-content: center;
   background-color: var(--basic-white);
+
+  @media (min-width: 768px) {
+    padding-top: 133px;
+  }
 }
 
 .product-more__link {
@@ -26,6 +30,12 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 8px;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 22px;
+    width: 167px;
+  }
 }
 
 .product-more__description {
@@ -38,6 +48,10 @@
   color: var(--special-dark-grey);
   margin: 0;
   margin-bottom: 21px;
+
+  @media (min-width: 768px) {
+    width: 167px;
+  }
 }
 
 .product-more__button {
@@ -47,4 +61,8 @@
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: 768px) {
+    align-self: flex-end;
+  }
 }

@@ -41,29 +41,28 @@
     <h1 class="catalog__title">Каталог товаров</h1>
     <section class="products">
       <h2 class="visually-hidden">Товары серии Cat energy</h2>
-      <div class="products__wrapper">
         <ul class="products__list">
           <li class="products__item product">
-            <a class="product__link" href="">
-              <img class="product__image" src="../img/products/product_01.png" width="140" height="112"
-                alt="Корм для котов Cat Energy PRO 500 грамм со вкусом курицы">
-            </a>
-            <h3 class="product__title">Cat Energy PRO 500 г</h3>
-            <dl class="product__features">
-              <div class="product__features-item">
-                <dt class="product__features-number">Масса</dt>
-                <dd class="product__features-description">500 г</dd>
-              </div>
-              <div class="product__features-item">
-                <dt class="product__features-number">Вкус</dt>
-                <dd class="product__features-description">Курица</dd>
-              </div>
-              <div class="product__features-item">
-                <dt class="product__features-number">Цена</dt>
-                <dd class="product__features-description">700 Р.</dd>
-              </div>
-            </dl>
-            <a class="product__button button" href="#">Заказать</a>
+              <a class="product__link" href="">
+                <img class="product__image" src="../img/products/product_01.png" width="140" height="112"
+                  alt="Корм для котов Cat Energy PRO 500 грамм со вкусом курицы">
+              </a>
+              <h3 class="product__title">Cat Energy PRO 500 г</h3>
+              <dl class="product__features">
+                <div class="product__features-item">
+                  <dt class="product__features-number">Масса</dt>
+                  <dd class="product__features-description">500 г</dd>
+                </div>
+                <div class="product__features-item">
+                  <dt class="product__features-number">Вкус</dt>
+                  <dd class="product__features-description">Курица</dd>
+                </div>
+                <div class="product__features-item">
+                  <dt class="product__features-number">Цена</dt>
+                  <dd class="product__features-description">700 Р.</dd>
+                </div>
+              </dl>
+              <a class="product__button button" href="#">Заказать</a>
           </li>
           <li class="products__item product">
             <a class="product__link" href="">
@@ -211,7 +210,8 @@
         </ul>
       </div>
     </section>
-    <section class="additional">
+    <div class="additional-promo">
+      <section class="additional-promo__additional additional">
       <div class="additional__wrapper">
         <h2 class="additional__title ">Дополнительные товары</h2>
         <ul class="additional__list">
@@ -249,8 +249,8 @@
           </li>
         </ul>
       </div>
-    </section>
-    <section class="promobox">
+      </section>
+      <section class="additional-promo__promobox promobox">
       <h2 class="visually-hidden">Промо баннер</h2>
       <a class="promobox__link" href="#">
         <div class="promobox__wrapper">
@@ -261,27 +261,30 @@
 
         </div>
       </a>
-    </section>
-    <section class="contacts contacts--grey">
-      <div class="contacts__wrapper">
-        <p class="contacts__title">Приглашаем к сотрудничеству дилеров!</p>
-        <address class="contacts__address address">
-          <p class="address__street">ул. Большая Конюшенная, д. 19/8</p>
-          <p class="address__city">Санкт-Петербург</p>
-        </address>
-      </div>
-    </section>
-    <section class="map map--grey">
-      <div class="map__wrapper">
-        <img class="map__image" src="../img/footer-map.jpg" width="320" height="362"
-          alt="Карта с адресом магазина Cat Energy">
-      </div>
-    </section>
+      </section>
+    </div>
+    <div class="address">
+      <section class="address__contacts contacts contacts--grey">
+        <div class="contacts__wrapper">
+          <p class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</p>
+          <address class="contacts__address">
+            <p class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</p>
+            <p class="contacts__address-city">Санкт-Петербург</p>
+          </address>
+        </div>
+      </section>
+      <section class="address_map map map--grey">
+        <div class="map__wrapper">
+          <img class="map__image" src="../img/footer-map.jpg" width="320" height="362"
+            alt="Карта с адресом магазина Cat Energy">
+        </div>
+      </section>
+    </div>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
       <div class="footer__logo second-logo">
-        <a href="index.html">
+        <a href="#">
           <img class="second-logo__image" src="../img/second-logo.svg" width="128" height="24"
             alt="Cat energy - все дял ваших котиков">
         </a>

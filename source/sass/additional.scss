@@ -2,6 +2,18 @@
   background-color: var(--basic-white);
 }
 
+.additional__wrapper {
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    padding: 0 30px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 0;
+  }
+}
+
 .additional__title {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -11,22 +23,60 @@
   color: var(--basic-black);
   margin: 0;
   margin-bottom: 36px;
-  margin-left: 20px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: 1440px) {
+    margin-bottom: 80px;
+  }
 }
 
 .additional__list {
   list-style-type: none;
   padding: 0;
+
+  @media (min-width: 786px) {
+    // padding: 0 38px;
+    border: 1px solid var(--special-light-grey-2);
+  }
+
+  @media (min-width: 1440px) {
+    border: none;
+  }
 }
 
 .additional__item {
   display: grid;
   grid-template-rows: repeat(3, auto);
-  padding: 13px 20px 21px;
+  padding-top: 13px;
+  padding-bottom: 21px;
   border-top: 1px solid var(--special-light-grey-2);
 
   &:last-child {
     border-bottom: 1px solid var(--special-light-grey-2);
+  }
+
+  @media (min-width: 768px) {
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(2, auto);
+
+    &:first-child {
+      border-top: none;
+    }
+  }
+
+  @media (min-width: 1440px) {
+    grid-template-rows: 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    padding: 15px 0 17px;
+
+    &:first-child {
+      border-top: 1px solid var(--special-light-grey-2);
+    }
   }
 }
 
@@ -41,12 +91,33 @@
   grid-row: 1 / 2;
   margin: 0;
   margin-bottom: 13px;
+
+  @media (min-width: 768px) {
+    padding-left: 38px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-column: 1 / 2;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
 }
 
 .additional__item-features {
   display: flex;
   justify-content: space-between;
   grid-row: 2 / 3;
+
+  @media (min-width: 768px) {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    padding-right: 38px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-column: 2 / 3;
+    padding-left: 0;
+  }
 }
 
 .additional__item-feature {
@@ -58,6 +129,10 @@
   color: var(--special-dark-grey);
   margin: 0;
   margin-bottom: 15px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 0;
+  }
 }
 
 .additional__item-price {
@@ -73,4 +148,16 @@
 .additional__item-button {
   padding-top: 10px;
   padding-bottom: 10px;
+
+  @media (min-width: 768px) {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+    margin: 0 38px;
+  }
+
+  @media (min-width: 1440px) {
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    margin: 0;
+  }
 }

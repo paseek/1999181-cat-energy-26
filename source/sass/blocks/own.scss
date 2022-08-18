@@ -5,8 +5,14 @@
   font-size: 24px;
   line-height: 26px;
   color: var(--basic-black);
-  margin: 0;
+  margin-top: 0;
   margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
 }
 
 .owm__item-wrapper {
@@ -29,6 +35,10 @@
   text-transform: uppercase;
   color: var(--special-dark-grey);
   margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 
 .own__label {
@@ -42,6 +52,19 @@
   padding-left: 15px;
   border: 1px solid var(--special-light-grey);
   box-sizing: border-box;
+  position: relative;
+
+  &--email {
+    background-image: url("../img/form/icon-email.svg");
+    background-repeat: no-repeat;
+    background-position: center right 15px;
+  }
+
+  &--phone {
+    background-image: url("../img/form/icon-phone.svg");
+    background-repeat: no-repeat;
+    background-position: center right 13px;
+  }
 }
 
 .own__field::placeholder {

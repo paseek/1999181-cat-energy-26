@@ -26,6 +26,12 @@
   background-color: var(--basic-white);
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
 }
 
 .advantages__list {
@@ -44,6 +50,7 @@
 
   @media (min-width: 1440px) {
     display: flex;
+    column-gap: 0;
   }
 }
 
@@ -63,36 +70,58 @@
     position: absolute;
   }
 
-  // &--healthy {
-  //   background-image: url("../img/category-icon-leaf.svg");
-  //   background-position: center;
-  //   background-repeat: no-repeat;
-  // }
+  &--healthy {
+    //   background-image: url("../img/category-icon-leaf.svg");
+    //   background-position: center;
+    //   background-repeat: no-repeat;
+    @media (min-width: 1440px) {
+      min-width: 230px;
+      margin-right: 94px;
+    }
+  }
 
-  // &--easy {
-  //   content: url("../img/category-icon-leaf.svg");
-  //   position: absolute;
-  //   top: 14px;
-  //   left: 15px;
-  // }
+  &--easy {
+    //   content: url("../img/category-icon-leaf.svg");
+    //   position: absolute;
+    //   top: 14px;
+    //   left: 15px;
+    @media (min-width: 1440px) {
+      min-width: 246px;
+      margin-right: 79px;
+    }
+  }
 
-  // &--instead {
-  //   content: url("../img/category-icon-leaf.svg");
-  //   position: absolute;
-  //   top: 14px;
-  //   left: 15px;
-  // }
+  &--instead {
+    //   content: url("../img/category-icon-leaf.svg");
+    //   position: absolute;
+    //   top: 14px;
+    //   left: 15px;
+    @media (min-width: 1440px) {
+      min-width: 248px;
+      margin-right: 77px;
+    }
+  }
 
-  // &--fast {
-  //   content: url("../img/category-icon-leaf.svg");
-  //   position: absolute;
-  //   top: 14px;
-  //   left: 15px;
-  // }
+  &--fast {
+    // content: url("../img/category-icon-leaf.svg");
+    // position: absolute;
+    // top: 14px;
+    // left: 15px;
+    @media (min-width: 1440px) {
+      min-width: 255px;
+    }
+  }
 
   @media (min-width: 768px) {
     min-height: 280px;
+    line-height: 280px;
     margin-bottom: 0;
+    width: 90%;
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
 
     &::after {
       counter-increment: section;
@@ -117,7 +146,7 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  color: (--special-dark-grey);
+  color: var(--special-dark-grey);
   background-color: var(--basic-white);
   margin: 0;
   margin-left: 80px;
@@ -127,6 +156,6 @@
     line-height: 24px;
     background-color: transparent;
     margin: 0;
-    margin-top: 90px;
+    margin-top: 101px;
   }
 }

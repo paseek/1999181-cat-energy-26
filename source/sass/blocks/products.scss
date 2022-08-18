@@ -1,16 +1,19 @@
 .products {
+  padding-bottom: 25px;
+
   @media (min-width: 768px) {
-    padding: 0 30px;
+    padding: 0 30px 68px;
   }
 
   @media (min-width: 1440px) {
-    padding: 0 110px;
+    padding: 85px 110px 75px;
   }
 }
 
 .products__list {
   list-style-type: none;
   padding: 0;
+  margin: 0;
 
   @media (min-width: 768px) {
     display: grid;

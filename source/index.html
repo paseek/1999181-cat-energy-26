@@ -18,7 +18,7 @@
       <img class="second-logo__image" src="img/second-logo.svg" width="101" height="18"
         alt="Cat energy - все дял ваших котиков">
     </a>
-    <nav class="nav">
+    <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -104,8 +104,8 @@
             <dd class="example__stats-description">Затрачено <br>времени</dd>
           </div>
         </dl>
-        <p class="example__summary">Затраты на питание: 15 000 руб.</p>
-        <img class="example__img" src="img/example-image-before.png" width="280" height="232"
+        <p class="example__summary">Затраты на питание:<span class="example__summary-cost"> <br>15 000 руб.</span></p>
+        <img class="example__img" src="img/index/cat-slides-temp.png" width="280" height="256"
           alt="Изображение кота до и после перехода на функциональное питание">
         <div class="example__range">
           <!-- Тут будет ползунок было-стало -->
@@ -123,9 +123,47 @@
       </div>
     </section>
     <section class="address_map map">
-      <div class="map__wrapper">
-        <img class="map__image" src="img/footer-map.jpg" width="320" height="362"
-          alt="Карта с адресом магазина Cat Energy">
+        <div class="map__wrapper" id="map">
+          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script>
+            ymaps.ready(init);
+
+            function init () {
+                var myMap = new ymaps.Map("map", {
+                    // Координаты центра карты
+                    center:[59.938635, 30.323118],
+                    // Масштаб карты
+                    zoom: 16,
+                    // Выключаем все управление картой
+                    controls: ['typeSelector']
+                });
+
+                var myGeoObjects = [];
+
+                // Указываем координаты метки
+                myGeoObjects = new ymaps.Placemark([59.938635, 30.323118],{
+                                  balloonContentHeader: 'CAT ENERGY',
+                                  balloonContentFooter:  'Интернет-магазин функционального питания для котов.',
+                                },{
+                                iconLayout: 'default#image',
+                                // Путь до нашей картинки
+                                iconImageHref: '/img/map-icon.png',
+                                // Размеры иконки
+                                iconImageSize: [57, 53],
+                                // Смещение верхнего угла относительно основания иконки
+                                iconImageOffset: [-35, -70]
+                });
+
+                var clusterer = new ymaps.Clusterer({
+                    clusterDisableClickZoom: false,
+                    clusterOpenBalloonOnClick: false,
+                });
+
+                clusterer.add(myGeoObjects);
+                myMap.geoObjects.add(clusterer);
+                // Отключим zoom
+                myMap.behaviors.disable('scrollZoom');
+            }
+            </script>
       </div>
     </section>
   </div>
@@ -188,6 +226,7 @@
       </div>
     </div>
   </footer>
+  <script src="/js/toggle.js"></script>
 </body>
 
 </html>

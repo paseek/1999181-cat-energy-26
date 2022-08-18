@@ -10,17 +10,17 @@
   line-height: 36px;
   color: var(--basic-black);
   margin: 0;
-  margin-bottom: 37px;
-  padding: 0 20px;
+  // margin-bottom: 37px;
+  padding: 27px 20px 41px;
 
   @media (min-width: 768px) {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 82px;
-    padding: 0 30px;
+    // margin-bottom: 82px;
+    padding: 65px 30px 82px;
   }
 
-  @media (min-width: 768px) {
-    padding: 0 110px;
+  @media (min-width: 1440px) {
+    padding: 74px 110px 0;
   }
 }

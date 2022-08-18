@@ -1,19 +1,32 @@
 .social__list {
-  width: 132px;
+  display: flex;
+  min-width: 132px;
   list-style-type: none;
   padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 24px;
-  margin: 0;
   padding-top: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 
   @media (min-width: 768px) {
     padding: 0;
   }
 }
 
-.social__item:last-child {
-  margin-right: 0;
+.social__item {
+  position: relative;
+  width: 28px;
+  margin-right: 24px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  // fill: var(--basic-dark);
 }

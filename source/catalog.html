@@ -18,7 +18,7 @@
       <img class="second-logo__image" src="img/second-logo.svg" width="101" height="18"
         alt="Cat energy - все дял ваших котиков">
     </a>
-    <nav class="nav">
+    <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -38,7 +38,7 @@
     </nav>
   </header>
   <main class="catalog">
-    <h1 class="catalog__title">Каталог товаров</h1>
+    <h1 class="catalog__title">Каталог продукции</h1>
     <section class="products">
       <h2 class="visually-hidden">Товары серии Cat energy</h2>
         <ul class="products__list">
@@ -199,7 +199,7 @@
           <li class="products__item product-more">
             <a class="product-more__link" href="">
               <svg class="product-more__icon" aria-hidden="true" focusable="false" width="30" height="30"
-                viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg">
                 <path stroke="#D3D3D3" stroke-width="2" d="M31 0v60M60 31H0" />
               </svg>
               <h3 class="product-more__title">Показать еще 100500 товаров</h3>
@@ -213,7 +213,7 @@
     <div class="additional-promo">
       <section class="additional-promo__additional additional">
       <div class="additional__wrapper">
-        <h2 class="additional__title ">Дополнительные товары</h2>
+        <h2 class="additional__title">Дополнительные товары</h2>
         <ul class="additional__list">
           <li class="additional__item">
             <h3 class="additional__item-title">Сахарозаменитель</h3>
@@ -274,10 +274,48 @@
         </div>
       </section>
       <section class="address_map map map--grey">
-        <div class="map__wrapper">
-          <img class="map__image" src="img/footer-map.jpg" width="320" height="362"
-            alt="Карта с адресом магазина Cat Energy">
-        </div>
+        <div class="map__wrapper" id="map">
+          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script>
+            ymaps.ready(init);
+
+            function init () {
+                var myMap = new ymaps.Map("map", {
+                    // Координаты центра карты
+                    center:[59.938635, 30.323118],
+                    // Масштаб карты
+                    zoom: 16,
+                    // Выключаем все управление картой
+                    controls: ['typeSelector']
+                });
+
+                var myGeoObjects = [];
+
+                // Указываем координаты метки
+                myGeoObjects = new ymaps.Placemark([59.938635, 30.323118],{
+                                  balloonContentHeader: 'CAT ENERGY',
+                                  balloonContentFooter:  'Интернет-магазин функционального питания для котов.',
+                                },{
+                                iconLayout: 'default#image',
+                                // Путь до нашей картинки
+                                iconImageHref: '/img/map-icon.png',
+                                // Размеры иконки
+                                iconImageSize: [57, 53],
+                                // Смещение верхнего угла относительно основания иконки
+                                iconImageOffset: [-35, -70]
+                });
+
+                var clusterer = new ymaps.Clusterer({
+                    clusterDisableClickZoom: false,
+                    clusterOpenBalloonOnClick: false,
+                });
+
+                clusterer.add(myGeoObjects);
+                myMap.geoObjects.add(clusterer);
+                // Отключим zoom
+                myMap.behaviors.disable('scrollZoom');
+            }
+            </script>
+      </div>
       </section>
     </div>
   </main>
@@ -339,6 +377,7 @@
       </div>
     </div>
   </footer>
+  <script src="/js/toggle.js"></script>
 </body>
 
 </html>

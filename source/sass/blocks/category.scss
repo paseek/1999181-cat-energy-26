@@ -4,9 +4,16 @@
   padding-right: 20px;
   margin-bottom: 20px;
 
+  @media (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 45px;
+  }
+
   @media (min-width: 1440px) {
-    margin: auto;
     max-width: 1220px;
+    margin: auto;
+    margin-bottom: 71px;
   }
 }
 
@@ -14,7 +21,12 @@
   display: grid;
   gap: 20px;
   list-style-type: none;
+  margin: 0;
   padding: 0;
+
+  @media (min-width: 768px) {
+    gap: 30px;
+  }
 
   @media (min-width: 1440px) {
     grid-template-columns: 1fr 1fr;
@@ -164,6 +176,10 @@
 
     &::before {
       display: none;
+    }
+
+    &::after {
+      margin-left: 25px;
     }
   }
 }

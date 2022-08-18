@@ -18,7 +18,7 @@
       <img class="second-logo__image" src="img/second-logo.svg" width="101" height="18"
         alt="Cat energy - все дял ваших котиков">
     </a>
-    <nav class="nav">
+    <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -37,13 +37,14 @@
       </div>
     </nav>
   </header>
-  <main class="main-container">
-    <div class="main-container__wrapper">
-      <h1 class="main-container__title">Подбор программы</h1>
-      <p class="main-container__description">Заполните анкету, и мы подберем программу      питания для вашего кота</p>
-      <section class="order-information">
+  <main class="order">
+    <div class="order__header">
+      <h1 class="order__title">Подбор программы</h1>
+      <p class="order__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+    </div>
+      <section class="order__information">
       <h2 class="visually-hidden">Данные кота</h2>
-      <form class="order-information__form form" method="post" action="https://echo.htmlacademy.ru">
+      <form class="order__form form" method="post" action="https://echo.htmlacademy.ru">
         <div class="form__pet-info__wrapper">
           <ul class="form__pet-property property">
           <li class="property__item">
@@ -63,21 +64,21 @@
           <ul class="program-list">
             <li class="program-list__item">
               <label class="program-list__control">
-                <input class=" program-list__control-input" type="radio" name="похудение" value="yes" checked>
+                <input class="visually-hidden program-list__control-input" type="radio" name="похудение" value="yes" checked>
                 <span class="program-list__control-mark"></span>
                 <span class="program-list__control-label">Похудение</span>
               </label>
             </li>
             <li class="program-list__item">
               <label class="program-list__control">
-                <input class=" program-list__control-input" type="radio" name="похудение" value="yes">
+                <input class="visually-hidden program-list__control-input" type="radio" name="похудение" value="yes">
                 <span class="program-list__control-mark"></span>
                 <span class="program-list__control-label">Набор массы</span>
               </label>
             </li>
             <li class="program-list__item">
               <label class="program-list__control">
-                <input class=" program-list__control-input" type="radio" name="похудение" value="yes">
+                <input class="visually-hidden program-list__control-input" type="radio" name="похудение" value="yes">
                 <span class="program-list__control-mark"></span>
                 <span class="program-list__control-label">Не знаю (Нужен ваш совет)</span>
               </label>
@@ -85,54 +86,54 @@
           </ul>
           </div>
         </div>
-        <div class="form__contacts own">
-          <h2 class="own__title">Контактные данные (владельца кота)</h2>
+        <div class="form__contacts own title-position">
+          <h2 class="title own__title">Контактные данные (владельца кота)</h2>
           <div class="owm__item-wrapper">
             <div class="own__item">
               <label class="own__label" for="email">E-mail:*</label>
-              <input class="own__field contacts__field--email" type="email" name="email"  id="email"
+              <input class="own__field own__field--email" type="email" name="email"  id="email"
                 placeholder="кuklachev@gmail.com" required>
             </div>
             <div class="own__item">
               <label class="own__label" for="phone">Телефон:*</label>
-              <input class="own__field contacts__field--phone" type="tel" name="phone"  id="phone"
+              <input class="own__field own__field--phone" type="tel" name="phone"  id="phone"
                 placeholder="8 (960) 900-60-90" required>
             </div>
         </div>
         </div>
-        <div class="form__comment comment">
-          <h2 class="comment__title">Комментарий</h2>
+        <div class="form__comment comment title-position">
+          <h2 class="title comment__title">Комментарий</h2>
           <label class="comment__text" for="comment"></label>
-          <textarea class="comment__textarea" id="comment" name="comment" rows="7" cols="30"
+          <textarea class="comment__textarea" id="comment" name="comment" rows="0" cols="0"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
-        <div class="form__options options">
-          <h2 class="options__title">Дополнительно</h2>
+        <div class="form__options options title-position">
+          <h2 class="title title-margin options__title">Дополнительно</h2>
           <ul class="options__list">
             <li class="options__item">
               <label class="options__control">
-                <input class=" options__control-input" type="checkbox" name="sugar" checked>
+                <input class="visually-hidden options__control-input" type="checkbox" name="sugar" checked>
                 <span class="options__control-mark"></span>
                 <span class="options__control-label">Сахарозаменитель</span>
               </label>
             </li>
             <li class="options__item">
               <label class="options__control">
-                <input class=" options__control-input" type="checkbox" name="water">
+                <input class="visually-hidden options__control-input" type="checkbox" name="water">
                 <span class="options__control-mark"></span>
                 <span class="options__control-label">Питьевая вода</span>
               </label>
             </li>
             <li class="options__item">
               <label class="options__control">
-                <input class=" options__control-input" type="checkbox" name="milk">
+                <input class="visually-hidden options__control-input" type="checkbox" name="milk">
                 <span class="options__control-mark"></span>
                 <span class="options__control-label">Молоко</span>
               </label>
             </li>
             <li class="options__item">
               <label class="options__control">
-                <input class=" options__control-input" type="checkbox" name="vitamins">
+                <input class="visually-hidden options__control-input" type="checkbox" name="vitamins">
                 <span class="options__control-mark"></span>
                 <span class="options__control-label">Витамины</span>
               </label>
@@ -155,12 +156,49 @@
         </div>
       </section>
       <section class="address_map map map--grey">
-        <div class="map__wrapper">
-          <img class="map__image" src="img/footer-map.jpg" width="320" height="362"
-            alt="Карта с адресом магазина Cat Energy">
-        </div>
+        <div class="map__wrapper" id="map">
+          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script>
+            ymaps.ready(init);
+
+            function init () {
+                var myMap = new ymaps.Map("map", {
+                    // Координаты центра карты
+                    center:[59.938635, 30.323118],
+                    // Масштаб карты
+                    zoom: 16,
+                    // Выключаем все управление картой
+                    controls: ['typeSelector']
+                });
+
+                var myGeoObjects = [];
+
+                // Указываем координаты метки
+                myGeoObjects = new ymaps.Placemark([59.938635, 30.323118],{
+                                  balloonContentHeader: 'CAT ENERGY',
+                                  balloonContentFooter:  'Интернет-магазин функционального питания для котов.',
+                                },{
+                                iconLayout: 'default#image',
+                                // Путь до нашей картинки
+                                iconImageHref: '/img/map-icon.png',
+                                // Размеры иконки
+                                iconImageSize: [57, 53],
+                                // Смещение верхнего угла относительно основания иконки
+                                iconImageOffset: [-35, -70]
+                });
+
+                var clusterer = new ymaps.Clusterer({
+                    clusterDisableClickZoom: false,
+                    clusterOpenBalloonOnClick: false,
+                });
+
+                clusterer.add(myGeoObjects);
+                myMap.geoObjects.add(clusterer);
+                // Отключим zoom
+                myMap.behaviors.disable('scrollZoom');
+            }
+            </script>
+      </div>
       </section>
-    </div>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">
@@ -220,6 +258,7 @@
       </div>
     </div>
   </footer>
+  <script src="/js/toggle.js"></script>
 </body>
 
 </html>

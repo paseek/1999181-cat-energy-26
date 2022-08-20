@@ -1,8 +1,10 @@
+@use "../global/variables.scss" as *;
+
 // .main-container__wrapper {
 //   padding-top: 27px;
 //   padding-right: 20px;
 //   padding-left: 20px;
-//   background-color: var(--basic-white);
+//   background-color: $basic-white;
 
 //   @media (min-width: 768px) {
 //     padding: 0 69px;
@@ -31,7 +33,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: var(--basic-black);
+  color: $basic-black;
   margin: 0;
   margin-bottom: 37px;
 
@@ -48,7 +50,7 @@
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
-  color: var(--basic-black);
+  color: $basic-black;
   width: 80%;
   margin: 0;
 

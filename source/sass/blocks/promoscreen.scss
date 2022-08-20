@@ -1,6 +1,8 @@
+@use "../global/variables.scss" as *;
+
 .promoscreen {
   min-height: 480px;
-  background-color: var(--basic-white);
+  background-color: $basic-white;
 }
 
 
@@ -56,7 +58,7 @@
   font-size: 36px;
   line-height: 36px;
   text-align: center;
-  color: var(--basic-white);
+  color: $basic-white;
   margin: 0;
   padding-top: 27px;
   padding-bottom: 25px;
@@ -65,7 +67,7 @@
     width: 416px;
     font-size: 60px;
     line-height: 60px;
-    color: var(--basic-black);
+    color: $basic-black;
     text-align: start;
     margin-left: 117px;
     padding-top: 62px;
@@ -86,12 +88,12 @@
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
-  color: var(--basic-white);
+  color: $basic-white;
   margin: 0;
   padding-bottom: 29px;
 
   @media (min-width: 768px) {
-    color: var(--basic-black);
+    color: $basic-black;
     font-size: 20px;
     line-height: 20px;
     text-align: start;

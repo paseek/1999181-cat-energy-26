@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as *;
+
 .nav {
   @media (min-width: 768px) {
     margin-left: auto;
@@ -40,8 +42,8 @@
 //   right: 0;
 //   width: 24px;
 //   height: 1.5px;
-//   background-color: var(--basic-black);
-//   box-shadow: 0 8px 0 0 var(--basic-black), 0 16px 0 0 var(--basic-black);
+//   background-color: $basic-black;
+//   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
 // }
 
 // @media (max-width: 767px) {
@@ -71,7 +73,7 @@
   //   right: -2px;
   //   width: 24px;
   //   height: 1.5px;
-  //   background-color: var(--basic-black);
+  //   background-color: $basic-black;
   // }
 
   // &::before {
@@ -99,7 +101,7 @@
 // }
 
 .nav__wrapper {
-  background-color: var(--basic-white);
+  background-color: $basic-white;
   width: 100%;
   position: absolute;
   // display: none;
@@ -108,6 +110,7 @@
   @media (min-width: 768px) {
     display: block;
     position: relative;
+    padding-top: 42px;
   }
 
   @media (min-width: 1440px) {

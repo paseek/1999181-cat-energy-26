@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as *;
+
 .social__list {
   display: flex;
   min-width: 132px;
@@ -28,5 +30,13 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  // fill: var(--basic-dark);
+  fill: $special-dark-grey-4;
+
+  &:hover {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

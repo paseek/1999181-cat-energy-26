@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as *;
+
 .button {
   font-family: "Oswald", sans-serif;
   font-style: normal;
@@ -7,7 +9,15 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: var(--basic-white);
+  color: $basic-white;
   border: none;
-  background-color: var(--basic-green);
+  background-color: $basic-green;
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    color: rgba($basic-white, 0.3);
+  }
 }

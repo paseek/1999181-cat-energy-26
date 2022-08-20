@@ -1,3 +1,5 @@
+@use "../global/variables.scss" as *;
+
 .property {
   list-style-type: none;
 }
@@ -12,7 +14,7 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: var(--special-dark-grey);
+  color: $special-dark-grey;
   margin-bottom: 14px;
 }
 
@@ -25,8 +27,23 @@
   height: 45px;
   padding: 0;
   padding-left: 15px;
-  border: 1px solid var(--special-light-grey);
+  border: 1px solid $special-light-grey;
   box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid $basic-grey;
+  }
+
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+  }
+
+  &--error {
+    outline: none;
+    border: 2px solid $status-error;
+  }
 }
 
 .property__field::placeholder {
@@ -36,5 +53,5 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
-  color: var(--special-dark-grey);
+  color: $special-dark-grey;
 }

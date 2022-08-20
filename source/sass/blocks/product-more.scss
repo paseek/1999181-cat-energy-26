@@ -1,14 +1,16 @@
+@use "../global/variables.scss" as *;
+
 .product-more {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: var(--basic-white);
+  background-color: $basic-white;
   padding: 25px 20px;
-  border-top: 1px solid var(--special-light-grey-2);
-  border-bottom: 1px solid var(--special-light-grey-2);
+  border-top: 1px solid $special-light-grey-2;
+  border-bottom: 1px solid $special-light-grey-2;
 
   @media (min-width: 768px) {
-    border: 2px solid var(--basic-grey);
+    border: 2px solid $basic-grey;
     margin-top: 96px;
     padding-right: 38px;
     padding-left: 37px;
@@ -38,7 +40,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-  color: var(--special-dark-grey-3);
+  color: $special-dark-grey-3;
   text-align: center;
   text-transform: uppercase;
   margin: 0;
@@ -58,7 +60,7 @@
   font-size: 12px;
   line-height: 16px;
   text-align: center;
-  color: var(--special-dark-grey);
+  color: $special-dark-grey;
   margin: 0;
   margin-bottom: 21px;
 
@@ -70,12 +72,20 @@
 }
 
 .product-more__button {
-  color: var(--special-dark-grey);
-  background-color: var(--basic-grey);
+  color: $special-dark-grey;
+  background-color: $basic-grey;
   border: none;
   width: 100%;
   padding-top: 10px;
   padding-bottom: 10px;
+
+  &:hover {
+    background-color: $special-grey-2;
+  }
+
+  &:active {
+    color: rgba($special-dark-grey, 0.3);
+  }
 
   @media (min-width: 768px) {
     align-self: flex-end;

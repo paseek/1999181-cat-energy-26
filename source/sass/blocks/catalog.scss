@@ -1,5 +1,7 @@
+@use "../global/variables.scss" as *;
+
 .catalog {
-  background-color: var(--basic-white);
+  background-color: $basic-white;
 }
 
 .catalog__title {
@@ -8,7 +10,7 @@
   font-weight: 400;
   font-size: 36px;
   line-height: 36px;
-  color: var(--basic-black);
+  color: $basic-black;
   margin: 0;
   // margin-bottom: 37px;
   padding: 27px 20px 41px;

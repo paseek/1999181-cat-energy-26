@@ -1,6 +1,8 @@
+@use "../global/variables.scss" as *;
+
 .address {
   @media (min-width: 768px) {
-    background-color: var(--basic-grey);
+    background-color: $basic-grey;
   }
 
   @media (min-width: 1440px) {

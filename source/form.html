@@ -42,6 +42,7 @@
       <h1 class="order__title">Подбор программы</h1>
       <p class="order__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
     </div>
+
       <section class="order__information">
       <h2 class="visually-hidden">Данные кота</h2>
       <form class="order__form form" method="post" action="https://echo.htmlacademy.ru">
@@ -61,48 +62,48 @@
           </li>
           </ul>
           <div class="form__program-selection">
-          <ul class="program-list">
-            <li class="program-list__item">
-              <label class="program-list__control">
-                <input class="visually-hidden program-list__control-input" type="radio" name="похудение" value="yes" checked>
-                <span class="program-list__control-mark"></span>
-                <span class="program-list__control-label">Похудение</span>
-              </label>
-            </li>
-            <li class="program-list__item">
-              <label class="program-list__control">
-                <input class="visually-hidden program-list__control-input" type="radio" name="похудение" value="yes">
-                <span class="program-list__control-mark"></span>
-                <span class="program-list__control-label">Набор массы</span>
-              </label>
-            </li>
-            <li class="program-list__item">
-              <label class="program-list__control">
-                <input class="visually-hidden program-list__control-input" type="radio" name="похудение" value="yes">
-                <span class="program-list__control-mark"></span>
-                <span class="program-list__control-label">Не знаю (Нужен ваш совет)</span>
-              </label>
-            </li>
-          </ul>
+            <ul class="program-list">
+              <li class="program-list__item">
+                <label class="program-list__control">
+                  <input class="visually-hidden program-list__control-input" type="radio" name="programm"   value="weight-lost" checked>
+                  <span class="program-list__control-mark"></span>
+                  <span class="program-list__control-label">Похудение</span>
+                </label>
+              </li>
+              <li class="program-list__item">
+                <label class="program-list__control">
+                  <input class="visually-hidden program-list__control-input" type="radio" name="programm"   value="weight-gain">
+                  <span class="program-list__control-mark"></span>
+                  <span class="program-list__control-label">Набор массы</span>
+                </label>
+              </li>
+              <li class="program-list__item">
+                <label class="program-list__control">
+                  <input class="visually-hidden program-list__control-input" type="radio" name="programm"   value="dont-know">
+                  <span class="program-list__control-mark"></span>
+                  <span class="program-list__control-label">Не знаю (Нужен ваш совет)</span>
+                </label>
+              </li>
+            </ul>
           </div>
         </div>
         <div class="form__contacts own title-position">
           <h2 class="title own__title">Контактные данные (владельца кота)</h2>
-          <div class="owm__item-wrapper">
+          <div class="own__item-wrapper">
             <div class="own__item">
               <label class="own__label" for="email">E-mail:*</label>
               <div class="own__field-wrapper">
-              <input class="own__field own__field--email" type="email" name="email"  id="email"
+              <input class="own__field" type="email" name="email"  id="email"
                 placeholder="кuklachev@gmail.com" required>
-                <svg class="own__field--email-icon" aria-hidden="true" focusable="false" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.65 5.85v8m17-8v8M1 13.2h18M1 1.2h18m-.65 1.83L10 9.53l-8.35-6.5V1.5h16.7v1.53Z"/></svg>
+                <svg class="own__field-email" aria-hidden="true" focusable="false" width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1.65 5.85v8m17-8v8M1 13.2h18M1 1.2h18m-.65 1.83L10 9.53l-8.35-6.5V1.5h16.7v1.53Z"/></svg>
               </div>
             </div>
             <div class="own__item">
               <label class="own__label" for="phone">Телефон:*</label>
               <div class="own__field-wrapper">
-              <input class="own__field own__field--phone" type="tel" name="phone"  id="phone"
+              <input class="own__field" type="tel" name="phone"  id="phone"
                 placeholder="8 (960) 900-60-90" required>
-                <svg class="own__field--phone-icon" aria-hidden="true" focusable="false" width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17.9 9.75H9.4v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.12-.9.9 2.1 2.01ZM8.1 19.79v-6.22a.65.65 0 0 0-.6-.6H3.1a1.23 1.23 0 0 0 1.2 1.2h2.5v5.02H3.1a1.78 1.78 0 0 1-1.9-1.71V3.43a1.78 1.78 0 0 1 1.7-1.8h3.9v5.01H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.92a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 3.23v13.95a2.9 2.9 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z"/></g><defs><clipPath id="a"><path transform="translate(0 .32)" d="M0 0h20v20.07H0z"/></clipPath></defs></svg>
+                <svg class="own__field-phone" aria-hidden="true" focusable="false" width="20" height="21" viewBox="0 0 20 21" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#a)"><path d="M17.9 9.75H9.4v1.2h8.5l-2.1 2.11.9.9 3.1-3.1a.75.75 0 0 0 0-.9l-3.1-3.12-.9.9 2.1 2.01ZM8.1 19.79v-6.22a.65.65 0 0 0-.6-.6H3.1a1.23 1.23 0 0 0 1.2 1.2h2.5v5.02H3.1a1.78 1.78 0 0 1-1.9-1.71V3.43a1.78 1.78 0 0 1 1.7-1.8h3.9v5.01H4.4a1.22 1.22 0 0 0-1.2 1.2h4.4a.65.65 0 0 0 .6-.6V.92a.86.86 0 0 0-.7-.6H3.1A3 3 0 0 0 0 3.23v13.95a2.9 2.9 0 0 0 2.9 3.1h4.6a.5.5 0 0 0 .6-.5Z"/></g><defs><clipPath id="a"><path transform="translate(0 .32)" d="M0 0h20v20.07H0z"/></clipPath></defs></svg>
               </div>
             </div>
         </div>
@@ -110,7 +111,7 @@
         <div class="form__comment comment title-position">
           <h2 class="title comment__title">Комментарий</h2>
           <label class="comment__text" for="comment"></label>
-          <textarea class="comment__textarea" id="comment" name="comment" rows="0" cols="0"
+          <textarea class="comment__textarea" id="comment" name="comment" rows="1" cols="1"
             placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
         <div class="form__options options title-position">
@@ -150,9 +151,10 @@
         <p class="form__description">* — Обязательные поля</p>
       </form>
       </section>
-      </div>
+
       <div class="address">
       <section class="address__contacts contacts contacts--grey">
+        <h2 class="visually-hidden">Адрес компании</h2>
         <div class="contacts__wrapper">
           <p class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</p>
           <address class="contacts__address">
@@ -161,7 +163,8 @@
           </address>
         </div>
       </section>
-      <section class="address_map map map--grey">
+      <section class="address__map map map--grey">
+        <h2 class="visually-hidden">Адрес компании на карте</h2>
         <div class="map__wrapper" id="map">
           <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script>
             ymaps.ready(init);
@@ -205,6 +208,7 @@
             </script>
       </div>
       </section>
+      </div>
   </main>
   <footer class="footer">
     <div class="footer__wrapper">

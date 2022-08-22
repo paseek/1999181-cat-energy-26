@@ -60,6 +60,11 @@
   min-height: 60px;
   margin-bottom: 20px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+
+
+  // background-position: left 25px top 25px;
 
   &::before {
     content: "";
@@ -70,12 +75,12 @@
     background-color: $basic-green;
     margin-bottom: 20px;
     position: absolute;
+    z-index: -1;
   }
 
   &--healthy {
-    //   background-image: url("../img/category-icon-leaf.svg");
-    //   background-position: center;
-    //   background-repeat: no-repeat;
+    background-image: url("../img/index/category-icon-leaf.svg");
+
     @media (min-width: 1440px) {
       min-width: 230px;
       margin-right: 94px;
@@ -83,10 +88,8 @@
   }
 
   &--easy {
-    //   content: url("../img/category-icon-leaf.svg");
-    //   position: absolute;
-    //   top: 14px;
-    //   left: 15px;
+    background-image: url("../img/index/category-icon-easy.svg");
+
     @media (min-width: 1440px) {
       min-width: 246px;
       margin-right: 79px;
@@ -94,10 +97,8 @@
   }
 
   &--instead {
-    //   content: url("../img/category-icon-leaf.svg");
-    //   position: absolute;
-    //   top: 14px;
-    //   left: 15px;
+    background-image: url("../img/index/category-icon-instead.svg");
+
     @media (min-width: 1440px) {
       min-width: 248px;
       margin-right: 77px;
@@ -105,10 +106,8 @@
   }
 
   &--fast {
-    // content: url("../img/category-icon-leaf.svg");
-    // position: absolute;
-    // top: 14px;
-    // left: 15px;
+    background-image: url("../img/index/category-icon-fast.svg");
+
     @media (min-width: 1440px) {
       min-width: 255px;
     }
@@ -119,6 +118,7 @@
     line-height: 280px;
     margin-bottom: 0;
     width: 90%;
+    background-position: left 25px top 25px;
 
     &::before {
       width: 80px;

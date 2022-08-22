@@ -26,6 +26,11 @@
   padding-left: 12px;
   box-sizing: border-box;
 
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+  }
+
   @media (min-width: 768px) {
     min-height: 174px;
     padding: 9px 15px;

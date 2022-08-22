@@ -17,7 +17,7 @@
   }
 }
 
-.owm__item-wrapper {
+.own__item-wrapper {
   @media (min-width: 1440px) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -75,7 +75,7 @@
   position: relative;
 }
 
-.own__field--email-icon {
+.own__field-email {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -84,7 +84,7 @@
   stroke: $special-dark-grey-2;
 }
 
-.own__field-wrapper:hover .own__field--email-icon {
+.own__field-wrapper:hover .own__field-email {
   stroke: $feild-hover;
 }
 
@@ -92,7 +92,7 @@
 //   stroke: $basic-green;
 // }
 
-.own__field--phone-icon {
+.own__field-phone {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -101,7 +101,7 @@
   fill: $special-dark-grey-2;
 }
 
-.own__field-wrapper:hover .own__field--phone-icon {
+.own__field-wrapper:hover .own__field-phone {
   fill: $feild-hover;
 }
 

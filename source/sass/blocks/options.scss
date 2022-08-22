@@ -64,16 +64,6 @@
   }
 }
 
-.options__control-input:focus-visible + .options__control-mark {
-  outline: 2px solid var(--special-purple);
-  outline-offset: 2px;
-}
-
-// .control-input:focus-visible + .control-mark {
-//   outline: 2px solid var(--special-purple);
-//   outline-offset: 2px;
-// }
-
 .options__control-input:disabled + .options__control-mark {
   opacity: 0.3;
 }
@@ -114,6 +104,11 @@
   @media (min-width: 768px) {
     background-size: 24px 18px;
   }
+}
+
+.options__control-input:focus + .options__control-mark {
+  outline: none;
+  border: 2px solid $special-dark-grey;
 }
 
 .options__control-label {

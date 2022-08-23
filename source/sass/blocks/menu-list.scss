@@ -101,26 +101,22 @@
       border-bottom: 2px solid $basic-green;
     }
   }
+}
 
+.index .menu-list__link {
   @media (min-width: 1440px) {
-    &--white {
-      color: $basic-white;
-
-      &:hover {
-        color: rgba($basic-white, 0.6);
-      }
-
-      &:active {
-        color: rgba($basic-white, 0.3);
-      }
-    }
+    color: $basic-white;
 
     &--current {
       border-bottom: 2px solid $basic-white;
+    }
 
-      // &:hover {
-      //   color: $basic-white;
-      // }
+    &:hover {
+      color: rgba($basic-white, 0.6);
+    }
+
+    &:active {
+      color: rgba($basic-white, 0.3);
     }
   }
 }

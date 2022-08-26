@@ -5,18 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+  <link rel="manifest" href="img/favicons/Manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
   <header class="header">
     <a class="header__main-logo" href="index.html">
-      <img class="header__main-logo-image" src="img/main-logo.svg" width="33" height="37"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo/main-logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/main-logo-tablet.svg">
+        <img class="header__main-logo-image" src="img/logo/main-logo-phone.svg" width="191" height="38"
         alt="Кэт энерджи - магазин питания для котов">
-    </a>
-    <a class="header__second-logo second-logo" href="index.html">
-      <img class="second-logo__image" src="img/second-logo.svg" width="101" height="18"
-        alt="Cat energy - все дял ваших котиков">
+      </picture>
     </a>
     <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
@@ -214,7 +218,7 @@
     <div class="footer__wrapper">
       <div class="footer__logo second-logo">
         <a href="index.html">
-          <img class="second-logo__image" src="img/second-logo.svg" width="128" height="24"
+          <img class="second-logo__image" src="img/logo/second-logo.svg" width="128" height="24"
             alt="Cat energy - все дял ваших котиков">
         </a>
       </div>

@@ -35,7 +35,6 @@
 
 .example__wrapper {
   @media (min-width: 768px) {
-    // min-height: 1080px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-right: 30px;
@@ -58,7 +57,6 @@
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
-  // background-color: $special-grey-3);
   margin: 0;
   margin-bottom: 40px;
 
@@ -83,7 +81,6 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
-  // color: $special-dark-grey);
   margin: 0;
   margin-bottom: 20px;
 
@@ -107,14 +104,12 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 32px;
-  // background-color: $special-grey-3);
   margin: 0;
 
   @media (min-width: 768px) {
     gap: 42px;
     grid-column: 1 / 2;
     z-index: 1;
-    // justify-self: start;
   }
 
   @media (min-width: 1440px) {
@@ -146,7 +141,6 @@
   text-transform: uppercase;
   text-align: center;
   color: $basic-black;
-  // margin-bottom: 5px;
   padding-top: 14px;
   padding-bottom: 17px;
   position: relative;
@@ -226,12 +220,10 @@
     grid-column: 2 / 3;
     justify-self: end;
     text-align: right;
-    // justify-self: end;
     z-index: 1;
     margin: 0;
     margin-top: 8px;
     margin-bottom: 99px;
-    // margin-bottom: 145px;
 
     br {
       display: block;
@@ -244,7 +236,6 @@
     margin: 0;
     margin-bottom: 75px;
     justify-self: start;
-    // text-align: right;
 
     br {
       display: none;
@@ -258,33 +249,12 @@
   }
 }
 
-// .example__summary-cost {
-//   @media (min-width: 768px) {
-//     margin-top: 20px;
-//   }
-// }
-
-// .example__img {
-//   display: flex;
-//   margin: 0 auto;
-
-//   @media (min-width: 768px) {
-//     width: 560px;
-//     height: 512px;
-//     grid-column: 1 / 3;
-//     z-index: 1;
-//   }
-
-//   @media (min-width: 1440px) {
-//     grid-column: 2 / 3;
-//     grid-row: 1 / 5;
-//   }
-// }
-
 .example__range {
   width: 280px;
   height: 256px;
+  display: flex;
   position: relative;
+  margin: 0 auto;
 
   @media (min-width: 768px) {
     width: 560px;
@@ -294,16 +264,6 @@
     justify-self: center;
   }
 
-  // &::before {
-  //   position: absolute;
-  //   content: "";
-  //   left: 50%;
-  //   width: 4px;
-  //   height: 100%;
-  //   background-color: $special-dark-grey-4;
-  //   z-index: 1;
-  // }
-
   @media (min-width: 1440px) {
     grid-column: 2 / 3;
     grid-row: 1 / 5;
@@ -311,35 +271,22 @@
 }
 
 .example__range-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
   height: 100%;
-  // background-color: white;
+  object-fit: cover;
+}
 
-  &--before {
-    background-image: url("/img/index/cat-range-after.png");
+.example__range-image--before {
+  object-position: left;
+}
 
-    @media (min-width: 768px) {
-      background-image: url("/img/index/cat-range-after-big.png");
-    }
-  }
-
-  &--after {
-    background-image: url("/img/index/cat-range-before.png");
-    width: 50%;
-
-    @media (min-width: 768px) {
-      background-image: url("/img/index/cat-range-before-big.png");
-    }
-  }
+.example__range-image--after {
+  object-position: right;
 }
 
 .example__range-toggle {
   position: absolute;
   content: "";
-  left: 50%;
+  left: calc(50% - 2px);
   width: 4px;
   height: 100%;
   background-color: $special-dark-grey-4;
@@ -366,7 +313,7 @@
 .example__range-button {
   content: "";
   position: absolute;
-  left: calc(50% - 22px);
+  left: calc(50% - 20px);
   top: calc(50% - 22px);
   width: 40px;
   height: 40px;
@@ -382,7 +329,7 @@
     background-color: $special-dark-grey-4;
     width: 8px;
     height: 18px;
-    top: 11px;
+    top: 10px;
   }
 
   &::after {
@@ -395,45 +342,4 @@
     @include arrow-helper();
     right: 8px;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   top: 42%;
-  //   right: -20px;
-  //   width: 40px;
-  //   height: 40px;
-  //   background-color: white;
-  //   border-radius: 50%;
-  //   border: 2px solid grey;
-  // }
-
-  // position: absolute;
-  // content: "";
-  // left: 50%;
-  // width: 4px;
-  // height: 100%;
-  // background-color: $special-dark-grey-4;
-  // z-index: 1;
 }
-
-// .example__range-button:hover::before,
-// .example__range-button:hover::after {
-//   background-color: $basic-green;
-// }
-
-// .example__range-button:active::before,
-// .example__range-button:active::after {
-//   opacity: 0.6;
-// }
-
-
-// .example__range-button-icon {
-//   position: absolute;
-//   top: 42%;
-//   right: -18px;
-
-//   &:hover {
-//     stroke: $basic-green;
-//   }
-// }

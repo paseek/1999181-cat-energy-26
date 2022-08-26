@@ -5,18 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
+  <link rel="manifest" href="img/favicons/Manifest.webmanifest">
   <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body index">
   <header class="header">
     <a class="header__main-logo" href="#">
-      <img class="header__main-logo-image" src="img/main-logo.svg" width="33" height="37"
+      <picture>
+        <source media="(min-width: 1200px)" srcset="img/logo/main-logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo/main-logo-tablet.svg">
+        <img class="header__main-logo-image" src="img/logo/main-logo-phone.svg" width="191" height="38"
         alt="Кэт энерджи - магазин питания для котов">
-    </a>
-    <a class="header__second-logo second-logo" href="#">
-      <img class="second-logo__image" src="img/second-logo.svg" width="101" height="18"
-        alt="Cat energy - все дял ваших котиков">
+      </picture>
     </a>
     <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
@@ -109,12 +113,21 @@
         <p class="example__summary">Затраты на питание:<span class="example__summary-cost"> <br>15 000 руб.</span></p>
         <div class="example__range">
           <div class="example__range-toggle">
-          <div class="example__range-button">
-            <!-- <svg class="example__range-button-icon" aria-hidden="true" focusable="false" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="1" y="1" width="38" height="38" rx="19" fill="#fff"/><path d="m16 11-8 9 8 9V11ZM32 20l-8-9v18l8-9Z" fill="#666"/><rect x="1" y="1" width="38" height="38" rx="19" stroke="#666" stroke-width="2"/></svg> -->
+            <button class="example__range-button" type="button">
+            </button>
           </div>
-        </div>
-          <div class="example__range-image example__range-image--before"></div>
-          <div class="example__range-image example__range-image--after"></div>
+          <div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/index/cat-range-before-phone@2x.png 1x, /img/index/cat-range-before-tablet@2x.png 2x">
+              <img class="example__range-image example__range-image--before" src="/img/index/cat-range-before-phone.png" srcset="/img/index/cat-range-before-phone@2x.png 2x" width="280" height="256" alt="Толстый котик"></img>
+            </picture>
+          </div>
+          <div>
+            <picture>
+              <source media="(min-width: 768px)" srcset="/img/index/cat-range-after-phone@2x.png 1x, /img/index/cat-range-after-tablet@2x.png 2x">
+              <img class="example__range-image example__range-image--after" src="/img/index/cat-range-after-phone.png" srcset="/img/index/cat-range-after-phone@2x.png 2x" width="280" height="256" alt="Худой котик"></img>
+          </picture>
+          </div>
         </div>
       </div>
     </section>
@@ -180,7 +193,7 @@
     <div class="footer__wrapper">
       <div class="footer__logo second-logo">
         <a href="#">
-          <img class="second-logo__image" src="img/second-logo.svg" width="128" height="24"
+          <img class="second-logo__image" src="img/logo/second-logo.svg" width="128" height="24"
             alt="Cat energy - все дял ваших котиков">
         </a>
       </div>

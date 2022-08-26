@@ -110,10 +110,11 @@
   @media (min-width: 768px) {
     display: block;
     position: relative;
-    padding-top: 42px;
+    padding-top: 18px;
   }
 
   @media (min-width: 1440px) {
+    padding-top: 16px;
     background-color: transparent;
     z-index: 1;
   }

@@ -1,0 +1,28 @@
+@use "../global/variables.scss" as *;
+
+.catalog {
+  background-color: $basic-white;
+}
+
+.catalog__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: $basic-black;
+  margin: 0;
+  // margin-bottom: 37px;
+  padding: 27px 20px 41px;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    // margin-bottom: 82px;
+    padding: 65px 30px 82px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 74px 110px 0;
+  }
+}

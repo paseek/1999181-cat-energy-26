@@ -1,0 +1,86 @@
+@use "../global/variables.scss" as *;
+
+.contacts {
+  background-color: $basic-white;
+
+  &--grey {
+    background-color: $basic-grey;
+  }
+
+  @media (min-width: 1440px) {
+    max-height: 198px;
+    overflow: scroll;
+    position: absolute;
+    top: 95px;
+    left: 110px;
+    background-color: $basic-white;
+    z-index: 1;
+  }
+}
+
+.contacts__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  padding: 26px 20px;
+
+  @media (min-width: 768px) {
+    padding: 60px 70px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 60px 80px;
+    gap: 61px;
+  }
+}
+
+.contacts__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special-dark-grey-3;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 26px;
+    width: 172px;
+  }
+}
+
+.contacts__address {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: $special-dark-grey;
+  justify-self: end;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    width: 160px;
+    text-align: right;
+  }
+
+  @media (min-width: 1440px) {
+    text-align: left;
+  }
+}
+
+.contacts__address-street {
+  margin: 0;
+
+  @media (min-width: 768px) {
+    margin-bottom: 18px;
+  }
+}
+
+.contacts__address-city {
+  margin: 0;
+}

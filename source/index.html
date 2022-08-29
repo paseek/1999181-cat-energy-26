@@ -46,8 +46,12 @@
       <div class="promoscreen__wrapper">
         <h2 class="promoscreen__title">Функциональное питание для котов</h2>
         <p class="promoscreen__subtitle">Занялся собой? Займись котом!</p>
-        <img class="promoscreen__image" src="img/promo-image.png" width="280" height="270"
+        <picture>
+          <source media="(min-width: 1440px" srcset="img/index/jar-desktop@1x.png 1x, img/index/jar-desktop@2x.png 2x" >
+          <source media="(min-width: 768px)" srcset="img/index/jar-tablet@1x.jpg 1x, img/index/jar-tablet@2x.jpg 2x">
+          <img class="promoscreen__image" src="img/index/jar-mobile@1x.png" srcset="img/index/jar-mobile@2x.png 2x" width="280" height="270"
           alt="Функцональное питание Cat energy pro со вкусом курицы - 500 грамм">
+        </picture>
         <a class="promoscreen__link button" href="form.html">Подобрать программу</a>
       </div>
     </section>

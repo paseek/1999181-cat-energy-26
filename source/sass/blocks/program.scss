@@ -1,0 +1,97 @@
+@use "../global/variables.scss" as *;
+
+.program-list {
+  margin: 0;
+  list-style-type: none;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    border: 1px solid $special-light-grey;
+    margin: 0 70px;
+    padding: 25px 27px;
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
+}
+
+.program-list__control {
+  display: block;
+  position: relative;
+  padding: 6px 0;
+}
+
+.program-list__item {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  margin-bottom: 12px;
+
+  &--disabled,
+  &:disabled {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: rgba($special-dark-grey, 0.3);
+    margin-bottom: 12px;
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.program-list__control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $special-grey;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+  &:hover {
+    border: 1px solid $radio-hover;
+  }
+}
+
+.program-list__control-input:focus + .program-list__control-mark {
+  outline: none;
+  border: 2px solid $special-dark-grey;
+}
+
+// .program-list__control-input[type="radio"]:checked + .program-list__control-mark {
+//   border: 1px solid $radio-hover;
+// }
+
+.program-list__control-input[type="radio"]:checked + .program-list__control-mark::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  width: 14px;
+  height: 14px;
+  background-color: $basic-green;
+  border-radius: 50%;
+}
+
+.program-list__control-input:disabled + .program-list__control-mark {
+  opacity: 0.3;
+}
+
+.program-list__control-label {
+  display: inline-block;
+  padding-left: 45px;
+}

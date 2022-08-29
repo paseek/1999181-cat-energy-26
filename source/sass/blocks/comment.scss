@@ -1,0 +1,57 @@
+@use "../global/variables.scss" as *;
+
+.comment__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+  margin-top: 0;
+  margin-bottom: 37px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+}
+
+.comment__textarea {
+  border: 1px solid $special-light-grey;
+  width: 100%;
+  min-height: 150px;
+  padding-top: 9px;
+  padding-right: 15px;
+  padding-left: 12px;
+  box-sizing: border-box;
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+  }
+
+  @media (min-width: 768px) {
+    min-height: 174px;
+    padding: 9px 15px;
+  }
+
+  @media (min-width: 1440px) {
+    padding: 10px 19px;
+  }
+
+  &::placeholder {
+    font-family: "Oswald", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: $special-dark-grey;
+
+    @media (min-width: 768px) {
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}

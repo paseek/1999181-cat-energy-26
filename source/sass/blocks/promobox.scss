@@ -1,0 +1,78 @@
+@use "../global/variables.scss" as *;
+
+.promobox__wrapper {
+  width: 279px;
+  height: 289px;
+  display: flex;
+  margin: 0 auto;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/promobox-image.jpg");
+  background-position: top;
+  background-repeat: repeat, no-repeat;
+  background-size: cover;
+  position: relative;
+
+  &::before {
+    content: url("../img/promobox-icon.svg");
+    position: absolute;
+    top: 58px;
+    right: 0;
+    left: 0;
+    text-align: center;
+
+    @media (min-width: 768px) {
+      top: 57px;
+      left: 77px;
+      text-align: left;
+    }
+
+    @media (min-width: 1440px) {
+      top: 55px;
+      right: 0;
+      left: 0;
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 768px) {
+    width: 100%;
+    height: 200px;
+  }
+
+  @media (min-width: 1440px) {
+    width: 245px;
+    height: 289px;
+  }
+}
+
+.promobox__link {
+  text-decoration: none;
+}
+
+.promobox__description {
+  width: 100%;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: $basic-white;
+  margin-top: 186px;
+
+  @media (min-width: 768px) {
+    width: auto;
+    position: absolute;
+    top: 72px;
+    right: 124px;
+    margin: 0;
+    text-align: left;
+  }
+
+  @media (min-width: 1440px) {
+    width: 100%;
+    top: 184px;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+}

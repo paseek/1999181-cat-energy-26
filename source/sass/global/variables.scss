@@ -1,0 +1,64 @@
+.page__body {
+  margin: 0;
+}
+
+// Colors
+
+$basic-black: #000000;
+$basic-grey: #f2f2f2;
+$special-grey: #cdcdcd;
+$special-grey-2: #ebebeb;
+$special-grey-3: #eaeaea;
+$special-light-grey: #e7e7e7;
+$special-light-grey-2: #d9d9d9;
+$special-light-grey-3: #e6e6e6;
+$special-dark-grey: #444444;
+$special-dark-grey-2: #222222;
+$special-dark-grey-3: #111111;
+$special-dark-grey-4: #666666;
+$basic-white: #ffffff;
+$basic-green: #68b738;
+$basic-green-2: #5eaa2f;
+$status-error: #ff8282;
+$radio-hover: #bababa;
+$feild-hover: #bd1818;
+
+// @function hextorgb($hex) {
+//   @return red($hex), green($hex), blue($hex), 1;
+// }
+
+// :root {
+//   --basic-black: #{hextorgb(#000000)};
+//   --basic-grey: #{hextorgb(#f2f2f2)};
+//   --special-grey: #{hextorgb(#cdcdcd)};
+//   --special-grey-2: #{hextorgb(#ebebeb)};
+//   --special-grey-3: #{hextorgb(#eaeaea)};
+//   --special-light-grey: #{hextorgb(#e7e7e7)};
+//   --special-light-grey-2: #{hextorgb(#d9d9d9)};
+//   --special-light-grey-3: #{hextorgb(#e6e6e6)};
+//   --special-dark-grey: #{hextorgb(#444444)};
+//   --special-dark-grey-2: #{hextorgb(#222222)};
+//   --special-dark-grey-3: #{hextorgb(#111111)};
+//   --basic-white: #{hextorgb(#ffffff)};
+//   --basic-green: #{hextorgb(#68b738)};
+//   --basic-green-2: #{hextorgb(#5eaa2f)};
+//   --status-error: #{hextorgb(#ff8282)};
+// }
+
+// :root {
+//   --basic-black: #000000;
+//   --basic-grey: #f2f2f2;
+//   --special-grey: #cdcdcd;
+//   --special-grey-2: #ebebeb;
+//   --special-grey-3: #eaeaea;
+//   --special-light-grey: #e7e7e7;
+//   --special-light-grey-2: #d9d9d9;
+//   --special-light-grey-3: #e6e6e6;
+//   --special-dark-grey: #444444;
+//   --special-dark-grey-2: #222222;
+//   --special-dark-grey-3: #111111;
+//   --basic-white: #ffffff;
+//   --basic-green: #68b738;
+//   --basic-green-2: #5eaa2f;
+//   --status-error: #ff8282;
+// }

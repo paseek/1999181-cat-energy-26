@@ -1,0 +1,121 @@
+@use "../global/variables.scss" as *;
+
+.own__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+  margin-top: 0;
+  margin-bottom: 35px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+    margin-bottom: 76px;
+  }
+}
+
+.own__item-wrapper {
+  @media (min-width: 1440px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 80px;
+  }
+}
+
+.own__item {
+  display: grid;
+  grid-template-columns: max-content auto;
+  align-items: center;
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  margin-bottom: 14px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 20px;
+  }
+}
+
+.own__label {
+  max-width: 100px;
+  margin-right: 14px;
+}
+
+.own__field {
+  width: 100%;
+  height: 45px;
+  padding: 0;
+  padding-left: 15px;
+  border: 1px solid $special-light-grey;
+  box-sizing: border-box;
+  position: relative;
+
+  &:hover {
+    border: 1px solid $basic-grey;
+  }
+
+  &:focus {
+    outline: none;
+    border: 2px solid $special-dark-grey;
+  }
+
+  &--error {
+    outline: none;
+    border: 2px solid $status-error;
+  }
+}
+
+.own__field-wrapper {
+  position: relative;
+}
+
+.own__field-email {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 19px;
+  margin: auto;
+  stroke: $special-dark-grey-2;
+}
+
+.own__field-wrapper:hover .own__field-email {
+  stroke: $feild-hover;
+}
+
+// .own__field:focus .own__field--email-icon {
+//   stroke: $basic-green;
+// }
+
+.own__field-phone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 17px;
+  margin: auto;
+  fill: $special-dark-grey-2;
+}
+
+.own__field-wrapper:hover .own__field-phone {
+  fill: $feild-hover;
+}
+
+// .own__field:focus .own__field--phone-icon {
+//   fill: $basic-green;
+// }
+
+.own__field::placeholder {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+}

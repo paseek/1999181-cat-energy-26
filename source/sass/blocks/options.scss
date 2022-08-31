@@ -1,0 +1,125 @@
+@use "../global/variables.scss" as *;
+
+.options__title {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+  color: $basic-black;
+  margin-top: 0;
+  margin-bottom: 34px;
+
+  @media (min-width: 768px) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.options__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @media (min-width: 768px) {
+    display: grid;
+    column-gap: 123px;
+    row-gap: 32px;
+    grid-template-columns: repeat(auto-fit, 221px);
+  }
+
+  @media (min-width: 1440px) {
+    column-gap: 104px;
+  }
+}
+
+.options__item {
+  font-family: "Oswald", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special-dark-grey;
+  margin-bottom: 12px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 0;
+  }
+}
+
+.options__control {
+  display: block;
+  position: relative;
+  padding: 5px 0;
+
+  &--disabled {
+    opacity: 0.3;
+  }
+}
+
+.options__control-input:disabled + .options__control-mark {
+  opacity: 0.3;
+}
+
+
+.options__control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cccccc;
+  box-sizing: border-box;
+
+  @media (min-width: 768px) {
+    width: 40px;
+    height: 40px;
+  }
+
+  &:hover {
+    border: 1px solid $radio-hover;
+  }
+}
+
+.options__control-input[type="checkbox"]:checked + .options__control-mark::before {
+  // content: url("/img/form/form-radio-checked.svg");
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url("/img/form/form-radio-checked.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px 14px;
+
+  @media (min-width: 768px) {
+    background-size: 24px 18px;
+  }
+}
+
+.options__control-input:focus + .options__control-mark {
+  outline: none;
+  border: 2px solid $special-dark-grey;
+}
+
+.options__control-label {
+  display: inline-block;
+  padding-left: 45px;
+
+  @media (min-width: 768px) {
+    padding-left: 59px;
+  }
+}
+
+// .program-list__control-label {
+//   padding-left: 45px;
+// }

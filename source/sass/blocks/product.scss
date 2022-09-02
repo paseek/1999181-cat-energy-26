@@ -60,6 +60,7 @@
 }
 
 .product__link {
+  width: 140px;
   text-decoration: none;
   grid-row: 1 / 3;
   grid-column: 1 / 2;
@@ -70,7 +71,9 @@
   }
 }
 
-.product__image {
+img.product__image {
+  max-width: none;
+
   @media (min-width: 768px) {
     width: 100%;
     min-height: 200px;
@@ -111,6 +114,10 @@
     padding-top: 7px;
     padding-bottom: 9px;
   }
+}
+
+.product__features-description {
+  margin: 0;
 }
 
 .product__button {

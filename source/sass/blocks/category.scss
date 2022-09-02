@@ -27,6 +27,7 @@
   padding: 0;
 
   @media (min-width: 768px) {
+    margin-top: -2px;
     gap: 30px;
   }
 
@@ -40,29 +41,29 @@
 .category__item {
   background-color: $basic-grey;
   padding-left: 20px;
-  padding-bottom: 18px;
+  padding-bottom: 22px;
 
   &--weight-loss {
     background-image: url("../img/cat_back.svg");
     background-repeat: no-repeat;
-    background-position: top 21px left 21px;
+    background-position: top 21px left 22px;
   }
 
   &--weight-gain {
     background-image: url("../img/cat_gain.svg");
     background-repeat: no-repeat;
-    background-position: top 21px left 11px;
+    background-position: top 24px left 13px;
   }
 
   @media (min-width: 768px) {
     padding-left: 52px;
-    padding-bottom: 53px;
+    padding-bottom: 58px;
 
     &--weight-loss {
       background-image: url("../img/cat_back.svg");
       background-repeat: no-repeat;
       background-size: 200px 211px;
-      background-position: top 81px right 62px;
+      background-position: top 77px right 63px;
     }
 
     &--weight-gain {
@@ -75,7 +76,7 @@
 
   @media (min-width: 1440px) {
     padding-left: 52px;
-    padding-bottom: 55px;
+    padding-bottom: 59px;
 
     &--weight-loss {
       background-image: url("../img/cat_back.svg");
@@ -107,17 +108,18 @@
   margin-left: 71px;
 
   @media (min-width: 768px) {
+    max-width: 50%;
     font-size: 36px;
     line-height: 36px;
-    margin-top: 77px;
+    margin-top: 76px;
     margin-left: 0;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: 1440px) {
     margin-top: 77px;
-    margin-left: 194px;
-    margin-bottom: 73px;
+    margin-left: 161px;
+    margin-bottom: 75px;
   }
 }
 
@@ -129,19 +131,19 @@
   line-height: 18px;
   color: $special-dark-grey;
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 42px;
   margin-right: 31px;
 
   @media (min-width: 768px) {
     font-size: 16px;
     line-height: 24px;
-    margin-right: 332px;
-    margin-bottom: 48px;
+    margin-right: 312px;
+    margin-bottom: 51px;
   }
 
   @media (min-width: 1440px) {
     margin-right: 51px;
-    margin-bottom: 27px;
+    margin-bottom: 26px;
   }
 }
 
@@ -164,12 +166,12 @@
     width: 100%;
     background-color: $special-light-grey-2;
     position: absolute;
-    margin-top: -15px;
+    margin-top: -20px;
   }
 
   &::after {
     content: url("../img/index/category-arrow.svg");
-    margin-left: 15px;
+    margin-left: 16px;
   }
 
   &:hover {

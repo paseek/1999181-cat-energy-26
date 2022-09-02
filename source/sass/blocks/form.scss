@@ -18,23 +18,6 @@
   }
 }
 
-.form__description {
-  font-family: "Arial", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 16px;
-  text-align: center;
-  color: $basic-black;
-  margin: 0;
-
-  @media (min-width: 768px) {
-    display: inline;
-    font-size: 16px;
-    line-height: 16px;
-  }
-}
-
 .form__pet-property {
   padding: 0 20px 24px;
   margin: 0;
@@ -110,6 +93,7 @@
   line-height: 20px;
   margin-bottom: 21px;
   margin-left: 20px;
+  margin-right: 20px;
   padding: 7px 0;
   min-width: 280px;
 
@@ -128,6 +112,30 @@
     margin-right: 81px;
     margin-left: 110px;
   }
+}
+
+.form__description {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: $basic-black;
+  margin: 0;
+  padding: 0 20px;
+
+  @media (min-width: 768px) {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: left;
+    // padding: 0 70px;
+  }
+
+  // @media (min-width: 1440px) {
+  //   padding: 0 110px;
+  // }
 }
 
 .title-position {

@@ -2,11 +2,12 @@
 
 .address {
   @media (min-width: 768px) {
-    background-color: $basic-grey;
+    // background-color: $basic-grey;
   }
 
   @media (min-width: 1440px) {
     position: relative;
+    background-color: $basic-grey;
   }
 }
 

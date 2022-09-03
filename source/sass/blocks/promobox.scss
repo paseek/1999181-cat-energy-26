@@ -25,7 +25,7 @@
 
     @media (min-width: 768px) {
       top: 57px;
-      left: 77px;
+      left: 79px;
       text-align: left;
     }
 
@@ -48,7 +48,7 @@
   }
 
   @media (min-width: 1440px) {
-    width: 245px;
+    min-width: 245px;
     height: 289px;
     background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/catalog/promobox-image-desktop.jpg");
 
@@ -77,14 +77,14 @@
     width: auto;
     position: absolute;
     top: 72px;
-    right: 124px;
+    right: 125px;
     margin: 0;
     text-align: left;
   }
 
   @media (min-width: 1440px) {
     width: 100%;
-    top: 184px;
+    top: 185px;
     left: 0;
     right: 0;
     text-align: center;

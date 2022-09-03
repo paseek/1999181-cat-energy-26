@@ -16,14 +16,15 @@
 
   @media (min-width: 1440px) {
     display: grid;
+    gap: 80px;
     grid-template-columns: auto min-content;
-    padding: 0 110px 86px;
+    padding: 0 110px 87px;
   }
 }
 
 .additional-promo__additional {
   @media (min-width: 1440px) {
-    margin-right: 80px;
+    margin-right: 0;
   }
 }
 
@@ -31,7 +32,7 @@
   padding: 35px 20px;
 
   @media (min-width: 768px) {
-    padding: 69px 30px 76px;
+    padding: 69px 30px 78px;
   }
 
   @media (min-width: 1440px) {

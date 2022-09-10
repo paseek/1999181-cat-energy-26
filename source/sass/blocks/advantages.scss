@@ -13,6 +13,8 @@
   }
 
   @media (min-width: 1440px) {
+    max-width: 1440px;
+    margin: auto;
     border: none;
     padding-right: 110px;
     padding-left: 110px;
@@ -83,7 +85,7 @@
 
   &--healthy {
     background-image: url("../img/index/category-icon-leaf.svg");
-    background-position: center;
+    // background-position: center;
 
     @media (min-width: 768px) {
       background-position: left 24px top 22px;
@@ -97,7 +99,7 @@
 
   &--easy {
     background-image: url("../img/index/category-icon-easy.svg");
-    background-position: center;
+    // background-position: center;
 
     @media (min-width: 768px) {
       background-position: left 25px top 23px;
@@ -111,7 +113,7 @@
 
   &--instead {
     background-image: url("../img/index/category-icon-instead.svg");
-    background-position: center;
+    // background-position: center;
 
     @media (min-width: 768px) {
       background-position: left 27px top 23px;
@@ -125,7 +127,7 @@
 
   &--fast {
     background-image: url("../img/index/category-icon-fast.svg");
-    background-position: center;
+    // background-position: center;
     margin-bottom: 6px;
 
     @media (min-width: 768px) {

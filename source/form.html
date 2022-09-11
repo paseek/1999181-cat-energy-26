@@ -10,6 +10,9 @@
   <link rel="apple-touch-icon" href="img/favicons/favicon-180.png">
   <link rel="manifest" href="img/favicons/Manifest.webmanifest">
   <link rel="stylesheet" href="css/style-min.css">
+  <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+  <meta name="description" content="Самый эффективный способ похудеть в 2022 году! Без особых диет и голоданий - только в удовольствие"/>
 </head>
 <body class="page__body">
   <header class="header">
@@ -169,7 +172,7 @@
       <section class="address__map map map--grey">
         <h2 class="visually-hidden">Адрес компании на карте</h2>
         <div class="map__wrapper" id="map">
-          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script>
+          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script async>
             ymaps.ready(init);
 
             function init () {
@@ -251,7 +254,7 @@
       </div>
       <div class="footer__copyright copyright">
         <a class="copyright__text" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">HTML Academy</a>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Ссылка на сайт HTML Academy">
           <svg class="copyright__icon" aria-hidden="true" focusable="false" width="27" height="34" viewBox="0 0 27 34"
              xmlns="http://www.w3.org/2000/svg">
             <use xlink:href="img/sprite.svg#htmlacademy"></use>

@@ -36,23 +36,6 @@
   }
 }
 
-// .nav--closed .nav__toggle::before {
-//   content: "";
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   width: 24px;
-//   height: 1.5px;
-//   background-color: $basic-black;
-//   box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
-// }
-
-// @media (max-width: 767px) {
-//   .nav--closed .menu-list__item {
-//     display: none;
-//   }
-// }
-
 .nav--opened .nav__toggle {
   content: "";
   position: absolute;
@@ -115,7 +98,6 @@
   }
 
   @media (min-width: 1440px) {
-    position: relative;
     padding-top: 48px;
     background-color: transparent;
     z-index: 1;

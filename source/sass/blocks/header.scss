@@ -12,7 +12,10 @@
   }
 
   @media (min-width: 1440px) {
-    padding-top: 22px;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding-left: 110px;
+    padding-right: 110px;
   }
 }
 
@@ -21,16 +24,19 @@
   margin-top: 11px;
   margin-right: 56px;
   margin-left: 20px;
-  margin-bottom: 18px;
+  margin-bottom: 12px;
 
   @media (min-width: 768px) {
-    margin-top: 18px;
+    margin-top: 24px;
     margin-right: 19px;
     margin-left: 30px;
   }
 
   @media (min-width: 1440px) {
-    margin-left: 110px;
+    margin-right: 0;
+    margin-left: 0;
+    // margin-top: 54px;
+    // margin-left: 110px;
   }
 }
 

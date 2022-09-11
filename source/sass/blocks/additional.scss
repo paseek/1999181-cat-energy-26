@@ -36,7 +36,7 @@
   // margin-left: -40px;
 
   @media (min-width: 768px) {
-    padding-left: 40px;
+    padding-left: 38px;
     font-size: 36px;
     line-height: 36px;
     margin-bottom: 80px;
@@ -85,7 +85,7 @@
   display: grid;
   grid-template-rows: repeat(3, auto);
   padding-top: 13px;
-  padding-bottom: 21px;
+  padding-bottom: 18px;
   border-top: 1px solid $special-light-grey-2;
 
   &:last-child {
@@ -95,8 +95,11 @@
   @media (min-width: 768px) {
     grid-template-rows: repeat(2, auto);
     grid-template-columns: repeat(2, auto);
-    padding-top: 26px;
-    padding-bottom: 26px;
+    align-items: baseline;
+    padding-top: 25px;
+    padding-bottom: 27px;
+    border-right: 1px solid $special-light-grey-2;
+    border-left: 1px solid $special-light-grey-2;
 
     // &:first-child {
     //   border-top: none;
@@ -105,9 +108,11 @@
 
   @media (min-width: 1440px) {
     grid-template-rows: 1fr;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-    padding: 15px 0 17px;
+    grid-template-columns: 1fr 1fr 244px;
+    // align-items: center;
+    padding: 17px 0 14px;
+    border-right: none;
+    border-left: none;
 
     &:first-child {
       border-top: 1px solid $special-light-grey-2;
@@ -128,6 +133,8 @@
   margin-bottom: 13px;
 
   @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 20px;
     padding-left: 38px;
   }
 
@@ -147,11 +154,13 @@
     grid-row: 1 / 2;
     grid-column: 2 / 3;
     padding-right: 38px;
+    justify-content: flex-end;
   }
 
   @media (min-width: 1440px) {
     grid-column: 2 / 3;
-    padding-left: 0;
+    justify-content: space-between;
+    padding-right: 39px;
   }
 }
 
@@ -164,6 +173,13 @@
   color: $special-dark-grey;
   margin: 0;
   margin-bottom: 15px;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 22px;
+    margin-right: 50px;
+  }
 
   @media (min-width: 1440px) {
     margin-bottom: 0;
@@ -178,6 +194,12 @@
   line-height: 14px;
   color: $special-dark-grey;
   margin: 0;
+
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .additional__item-button {

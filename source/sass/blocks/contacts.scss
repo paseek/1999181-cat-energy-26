@@ -7,6 +7,10 @@
     background-color: $basic-grey;
   }
 
+  @media (min-width: 768px) {
+    background-color: $basic-white;
+  }
+
   @media (min-width: 1440px) {
     max-height: 198px;
     overflow: scroll;
@@ -21,16 +25,16 @@
 .contacts__wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 10px;
+  gap: 2px;
   padding: 26px 20px;
 
   @media (min-width: 768px) {
-    padding: 60px 70px;
+    padding: 58px 70px;
   }
 
   @media (min-width: 1440px) {
-    padding: 60px 80px;
-    gap: 61px;
+    padding: 58px 79px;
+    gap: 67px;
   }
 }
 
@@ -66,6 +70,7 @@
     line-height: 20px;
     width: 160px;
     text-align: right;
+    margin-top: -4px;
   }
 
   @media (min-width: 1440px) {
@@ -77,7 +82,7 @@
   margin: 0;
 
   @media (min-width: 768px) {
-    margin-bottom: 18px;
+    margin-bottom: 20px;
   }
 }
 

@@ -95,11 +95,16 @@
     line-height: 24px;
     font-weight: 400;
     padding: 0;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 
     &--current {
       border-bottom: 2px solid $basic-green;
     }
+  }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
 

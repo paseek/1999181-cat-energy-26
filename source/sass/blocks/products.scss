@@ -1,14 +1,16 @@
 @use "../global/variables.scss" as *;
 
 .products {
-  padding-bottom: 25px;
+  padding-bottom: 22px;
 
   @media (min-width: 768px) {
-    padding: 0 30px 68px;
+    padding: 0 30px 67px;
   }
 
   @media (min-width: 1440px) {
     padding: 85px 110px 75px;
+    max-width: 1440px;
+    margin: auto;
   }
 }
 
@@ -26,7 +28,8 @@
 
   @media (min-width: 1440px) {
     grid-template-columns: repeat(auto-fill, 245px);
-    gap: 80px;
+    row-gap: 62px;
+    column-gap: 80px;
   }
 }
 

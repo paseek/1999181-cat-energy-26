@@ -40,6 +40,7 @@
   padding-left: 14px;
   border: 1px solid $special-light-grey;
   box-sizing: border-box;
+  appearance: textfield;
 
   @media (min-width: 768px) {
     height: 52px;
@@ -62,6 +63,10 @@
     border: 2px solid $status-error;
   }
 }
+
+// input[type="number"].property__field {
+//   appearance: textfield;
+// }
 
 .property__field::placeholder {
   font-family: "Oswald", sans-serif;

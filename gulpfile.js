@@ -22,7 +22,7 @@ export const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
-    .pipe(rename('style-min.css'))
+    .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css', { sourcemaps: '.' }))
     .pipe(browser.stream());
 }
@@ -40,6 +40,10 @@ const scripts = () => {
     .pipe(minify({
       noSource: true
     }))
+    // .pipe(rename(function (path) {
+    //   path.basename += ".min";
+    //  }))
+    .pipe(rename('toggle.min.css'))
     .pipe(gulp.dest('build/js'));
 }
 

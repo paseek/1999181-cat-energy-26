@@ -199,4 +199,10 @@
       margin-left: 25px;
     }
   }
+
+  @media (min-width: 1440px) {
+    &::after {
+      margin-left: 28px;
+    }
+  }
 }

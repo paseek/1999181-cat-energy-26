@@ -8,7 +8,7 @@
   }
 
   @media (min-width: 768px) {
-    background-color: $basic-white;
+    background-color: $basic-grey;
   }
 
   @media (min-width: 1440px) {
@@ -16,9 +16,10 @@
     overflow: scroll;
     position: absolute;
     top: 95px;
-    left: 110px;
+    left: 0;
     background-color: $basic-white;
     z-index: 1;
+    margin: auto;
   }
 }
 

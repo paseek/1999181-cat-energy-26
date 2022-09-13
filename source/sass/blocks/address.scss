@@ -19,3 +19,18 @@
     height: 400px;
   }
 }
+
+.address__contacts-wrapper {
+  @media (min-width: 1440px) {
+    max-width: 1440px;
+    position: relative;
+    margin-left: 110px;
+  }
+
+  @media (min-width: 1650px) {
+    // max-width: 1440px;
+    // position: relative;
+    // padding: 0;
+    margin: 0 auto;
+  }
+}

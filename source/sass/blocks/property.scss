@@ -8,7 +8,7 @@
   display: grid;
   grid-template-columns: max-content auto;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -64,12 +64,17 @@
   }
 }
 
+input[type="number"].property__field::-webkit-outer-spin-button,
+input[type="number"].property__field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}
 // input[type="number"].property__field {
 //   appearance: textfield;
 // }
 
 .property__field::placeholder {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;

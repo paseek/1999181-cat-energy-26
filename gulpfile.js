@@ -43,7 +43,7 @@ const scripts = () => {
     // .pipe(rename(function (path) {
     //   path.basename += ".min";
     //  }))
-    .pipe(rename('toggle.min.css'))
+    .pipe(rename('toggle.min.js'))
     .pipe(gulp.dest('build/js'));
 }
 

@@ -2,6 +2,8 @@
 @use "global/fonts.scss";
 @use "global/variables.scss" as *;
 @use "global/global.scss";
+@use "global/page.scss";
+@use "global/visually-hidden.scss";
 
 //blocks
 @use "blocks/button.scss";

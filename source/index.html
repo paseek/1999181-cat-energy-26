@@ -50,11 +50,11 @@
         <h2 class="promoscreen__title">Функциональное питание для котов</h2>
         <p class="promoscreen__subtitle">Занялся собой? Займись котом!</p>
         <picture>
-          <source type="image/webp" media="(min-width: 1440px" srcset="img/index/jar-desktop@1x.webp 1x, img/index/jar-desktop@2x.webp 2x">
-          <source type="image/webp" media="(min-width: 768px" srcset="img/index/jar-tablet@1x.webp 1x, img/index/jar-tablet@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 1440px)" srcset="img/index/jar-desktop@1x.webp, img/index/jar-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/index/jar-tablet@1x.webp, img/index/jar-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/index/jar-mobile@1x.webp, img/index/jar-mobile@2x.webp 2x">
-          <source media="(min-width: 1440px" srcset="img/index/jar-desktop@1x.png 1x, img/index/jar-desktop@2x.png 2x" >
-          <source media="(min-width: 768px)" srcset="img/index/jar-tablet@1x.jpg 1x, img/index/jar-tablet@2x.jpg 2x">
+          <source media="(min-width: 1440px)" srcset="img/index/jar-desktop@1x.png, img/index/jar-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/index/jar-tablet@1x.jpg, img/index/jar-tablet@2x.jpg 2x">
           <img class="promoscreen__image" src="img/index/jar-mobile@1x.png" srcset="img/index/jar-mobile@2x.png 2x" width="280" height="270"
           alt="Функцональное питание Cat energy pro со вкусом курицы - 500 грамм">
         </picture>
@@ -130,7 +130,7 @@
               <source type="image/webp" media="(min-width: 768px)" srcset="img/index/cat-range-before-phone@2x.webp, img/index/cat-range-before-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/index/cat-range-before-phone.webp, img/index/cat-range-before-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/index/cat-range-before-phone@2x.png 1x, img/index/cat-range-before-tablet@2x.png 2x">
-              <img class="example__range-image example__range-image--before" src="img/index/cat-range-before-phone.png" srcset="img/index/cat-range-before-phone@2x.png 2x" width="280" height="256" alt="Толстый котик"></img>
+              <img class="example__range-image example__range-image--before" src="img/index/cat-range-before-phone.png" srcset="img/index/cat-range-before-phone@2x.png 2x" width="280" height="256" alt="Толстый котик">
             </picture>
           </div>
           <div>
@@ -138,7 +138,7 @@
               <source type="image/webp" media="(min-width: 768px)" srcset="img/index/cat-range-after-phone@2x.webp, img/index/cat-range-after-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/index/cat-range-after-phone.webp, img/index/cat-range-after-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/index/cat-range-after-phone@2x.png 1x, img/index/cat-range-after-tablet@2x.png 2x">
-              <img class="example__range-image example__range-image--after" src="img/index/cat-range-after-phone.png" srcset="img/index/cat-range-after-phone@2x.png 2x" width="280" height="256" alt="Худой котик"></img>
+              <img class="example__range-image example__range-image--after" src="img/index/cat-range-after-phone.png" srcset="img/index/cat-range-after-phone@2x.png 2x" width="280" height="256" alt="Худой котик">
           </picture>
           </div>
         </div>
@@ -159,8 +159,8 @@
         </div>
       <section class="address__map map map--grey">
         <h2 class="visually-hidden">Адрес компании на карте</h2>
-        <div class="map__wrapper" id="map">
-          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script async>
+        <div class="map__wrapper map--nojs" id="map">
+          <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script>
             ymaps.ready(init);
 
             function init () {
@@ -170,19 +170,19 @@
                     // Масштаб карты
                     zoom: 16,
                     // Выключаем все управление картой
-                    controls: ['typeSelector']
+                    controls: ["typeSelector"]
                 });
 
                 var myGeoObjects = [];
 
                 // Указываем координаты метки
                 myGeoObjects = new ymaps.Placemark([59.938635, 30.323118],{
-                                  balloonContentHeader: 'CAT ENERGY',
-                                  balloonContentFooter:  'Интернет-магазин функционального питания для котов.',
+                                  balloonContentHeader: "CAT ENERGY",
+                                  balloonContentFooter:  "Интернет-магазин функционального питания для котов.",
                                 },{
-                                iconLayout: 'default#image',
+                                iconLayout: "default#image",
                                 // Путь до нашей картинки
-                                iconImageHref: 'img/map-icon.png',
+                                iconImageHref: "img/map/map-icon.png",
                                 // Размеры иконки
                                 iconImageSize: [57, 53],
                                 // Смещение верхнего угла относительно основания иконки
@@ -197,7 +197,7 @@
                 clusterer.add(myGeoObjects);
                 myMap.geoObjects.add(clusterer);
                 // Отключим zoom
-                myMap.behaviors.disable('scrollZoom');
+                myMap.behaviors.disable("scrollZoom");
             }
             </script>
       </div>

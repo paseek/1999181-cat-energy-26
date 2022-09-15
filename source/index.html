@@ -16,15 +16,16 @@
 </head>
 <body class="page__body index">
   <header class="header">
-    <a class="header__main-logo" href="#">
+    <div class="header-wrapper">
+      <a class="header__main-logo" href="#">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo/main-logo-desktop.svg" width="202" height="59">
         <source media="(min-width: 768px)" srcset="img/logo/main-logo-tablet.svg" width="174" height="52">
         <img class="header__main-logo-image" src="img/logo/main-logo-phone.svg" width="191" height="38"
         alt="Кэт энерджи - магазин питания для котов">
       </picture>
-    </a>
-    <nav class="nav nav--closed nav--nojs">
+      </a>
+      <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -41,7 +42,8 @@
           </li>
         </ul>
       </div>
-    </nav>
+      </nav>
+  </div>
   </header>
   <main class="container">
     <h1 class="visually-hidden"> Интернет-магазин функционального питание для котов</h1>
@@ -54,7 +56,7 @@
           <source type="image/webp" media="(min-width: 768px)" srcset="img/index/jar-tablet@1x.webp, img/index/jar-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/index/jar-mobile@1x.webp, img/index/jar-mobile@2x.webp 2x">
           <source media="(min-width: 1440px)" srcset="img/index/jar-desktop@1x.png, img/index/jar-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/index/jar-tablet@1x.jpg, img/index/jar-tablet@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="img/index/jar-tablet@1x.png, img/index/jar-tablet@2x.png 2x">
           <img class="promoscreen__image" src="img/index/jar-mobile@1x.png" srcset="img/index/jar-mobile@2x.png 2x" width="280" height="270"
           alt="Функцональное питание Cat energy pro со вкусом курицы - 500 грамм">
         </picture>
@@ -146,7 +148,7 @@
     </section>
       <div class="address">
         <div class="address__contacts-wrapper">
-          <section class="address__contacts contacts contacts--grey">
+          <section class="address__contacts contacts">
             <h2 class="visually-hidden">Адрес компании</h2>
             <div class="contacts__wrapper">
               <p class="contacts__title">Приглашаем <br>к сотрудничеству дилеров!</p>
@@ -160,6 +162,19 @@
       <section class="address__map map map--grey">
         <h2 class="visually-hidden">Адрес компании на карте</h2>
         <div class="map__wrapper map--nojs" id="map">
+
+        <div class="map__plug-wrapper">
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="img/map/location-desktop.webp, img/map/location-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/map/location-tablet.webp, img/map/location-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map/location-mobile.webp, img/map/location-mobile@2x.webp 2x">
+            <source media="(min-width: 1440px)" srcset="img/map/location-desktop.jpg, img/map/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="img/map/location-tablet.jpg, img/map/location-tablet@2x.jpg 2x">
+            <img class="map__image" src="img/map/location-mobile.jpg" srcset="img/map/location-mobile@2x.jpg 2x" width="320" height="362"
+            alt="Функцональное питание Cat energy pro со вкусом курицы - 500 грамм">
+          </picture>
+        </div>
+
           <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script>
             ymaps.ready(init);
 
@@ -252,6 +267,7 @@
     </div>
   </footer>
   <script src="js/toggle.min.js"></script>
+  <script src="js/mapplug.min.js"></script>
 </body>
 
 </html>

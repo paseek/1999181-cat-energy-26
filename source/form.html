@@ -16,15 +16,16 @@
 </head>
 <body class="page__body">
   <header class="header">
-    <a class="header__main-logo" href="index.html">
+    <div class="header-wrapper">
+      <a class="header__main-logo" href="index.html">
       <picture>
         <source media="(min-width: 1200px)" srcset="img/logo/main-logo-desktop.svg" width="202" height="59">
         <source media="(min-width: 768px)" srcset="img/logo/main-logo-tablet.svg" width="174" height="52">
         <img class="header__main-logo-image" src="img/logo/main-logo-phone.svg" width="191" height="38"
         alt="Кэт энерджи - магазин питания для котов">
       </picture>
-    </a>
-    <nav class="nav nav--closed nav--nojs">
+      </a>
+      <nav class="nav nav--closed nav--nojs">
       <button class="nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
@@ -41,7 +42,8 @@
           </li>
         </ul>
       </div>
-    </nav>
+      </nav>
+  </div>
   </header>
   <main class="order">
     <div class="order__header">
@@ -124,8 +126,8 @@
           <h2 class="title title-margin options__title">Дополнительно</h2>
           <ul class="options__list">
             <li class="options__item">
-              <label class="options__control options__control--disabled">
-                <input class="visually-hidden options__control-input" type="checkbox" name="sugar" checked disabled>
+              <label class="options__control">
+                <input class="visually-hidden options__control-input" type="checkbox" name="sugar" checked>
                 <span class="options__control-mark"></span>
                 <span class="options__control-label">Сахарозаменитель</span>
               </label>
@@ -173,7 +175,18 @@
         </div>
       <section class="address__map map map--grey">
         <h2 class="visually-hidden">Адрес компании на карте</h2>
-        <div class="map__wrapper" id="map">
+        <div class="map__wrapper map--nojs" id="map">
+          <div class="map__plug-wrapper">
+            <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/map/location-desktop.webp, img/map/location-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/map/location-tablet.webp, img/map/location-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/map/location-mobile.webp, img/map/location-mobile@2x.webp 2x">
+              <source media="(min-width: 1440px)" srcset="img/map/location-desktop.jpg, img/map/location-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/map/location-tablet.jpg, img/map/location-tablet@2x.jpg 2x">
+              <img class="map__image" src="img/map/location-mobile.jpg" srcset="img/map/location-mobile@2x.jpg 2x" width="320" height="362"
+              alt="Функцональное питание Cat energy pro со вкусом курицы - 500 грамм">
+            </picture>
+          </div>
           <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script> <script>
             ymaps.ready(init);
 

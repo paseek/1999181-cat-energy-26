@@ -7,13 +7,13 @@
     background-color: $basic-grey;
   }
 
-  @media (min-width: 768px) {
-    background-color: $basic-grey;
-  }
+  // @media (min-width: 768px) {
+  //   background-color: $basic-grey;
+  // }
 
   @media (min-width: 1440px) {
     max-height: 198px;
-    overflow: scroll;
+    overflow: auto;
     position: absolute;
     top: 95px;
     left: 0;

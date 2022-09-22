@@ -12,6 +12,8 @@ import squoosh from 'gulp-libsquoosh';
 import svgo from 'gulp-svgo';
 import svgstore from 'gulp-svgstore';
 import {deleteAsync} from 'del';
+import newer from 'gulp-newer';
+import changed from 'gulp-changed';
 
 // Styles to build
 export const styles = () => {
@@ -35,17 +37,32 @@ const html = () => {
 }
 
 // Scripts
+// const scripts = () => {
+//   return gulp.src('source/js/*.js')
+//     .pipe(minify({
+//       noSource: true
+//     }))
+//     // .pipe(rename(function (path) {
+//     //   path.basename += ".min";
+//     //  }))
+//     .pipe(rename('toggle.min.js'))
+
+//     // .pipe(rename({ suffix: ".min" }))
+//     .pipe(gulp.dest('build/js'));
+// }
+
+
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(minify({
-      noSource: true
+        noSource: true,
+        ext:{
+          min:'.min.js'
+        },
     }))
-    // .pipe(rename(function (path) {
-    //   path.basename += ".min";
-    //  }))
-    .pipe(rename('toggle.min.js'))
     .pipe(gulp.dest('build/js'));
 }
+
 
 // Images
 const optimizeImages = () => {
@@ -59,9 +76,20 @@ const copyImages = () => {
     .pipe(gulp.dest('build/img'))
 }
 
+
+// Тесты
+const images = () => {
+  return gulp.src(['source/img/**/*.{png,jpg}', '!source/img/favicons/*.{png,jpg}'])
+    .pipe (changed ('build/img')) // Отправлять только измененные или недавно добавленные файлы изображений в следующий поток
+    .pipe(squoosh())
+    .pipe(gulp.dest('build/img'));
+  }
+
+
 // WebP
 const createWebp = () => {
   return gulp.src('source/img/**/*.{png,jpg}')
+    // .pipe(newer('build/img'))
     .pipe(squoosh({
       webp: {}
     }))
@@ -104,6 +132,7 @@ const clean = () => {
   return deleteAsync('build');
 }
 
+
 // Server
 const server = (done) => {
   browser.init({
@@ -123,18 +152,35 @@ const reload = (done) => {
   done();
 }
 
+// Files
+const cleanmobile = () => {
+  del.sync([
+    'source/**',
+    // here we use a globbing pattern to match everything inside the `mobile` folder
+    // we don't want to clean this file though so we negate the pattern
+    '!source'
+  ]);
+};
+
+
+
 // Watcher
 const watcher = () => {
   gulp.watch('source/sass/**/*.scss', gulp.series(styles));
   gulp.watch('source/js/**/*.js', gulp.series(scripts));
-  gulp.watch('source/*.html', gulp.series(html, reload));
+  gulp.watch('source/*.html', gulp.series(clean));
+  // gulp.watch('source/*', gulp.series(clean));
   // gulp.watch('source/*.html').on('change', browser.reload);
+  // gulp.watch('source/img/**/*.{png,jpg}', gulp.series(optimizeImages, createWebp, reload));
+  // gulp.watch(paths.images.src, images);
 }
 
 // Build
 export const build = gulp.series(
   clean,
+  // cleanmobile,
   copy,
+  // images,
   optimizeImages,
   gulp.parallel(
   styles,

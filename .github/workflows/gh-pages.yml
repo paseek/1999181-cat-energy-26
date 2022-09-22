@@ -23,9 +23,6 @@ jobs:
       - name: Installing Dependencies
         run: npm ci
 
-      - name: Linting
-        run: npm run lint
-
       - name: Building
         run: npm run build
 
@@ -33,5 +30,5 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@v4.2.2
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          folder: ./build
+          publish_dir: ./build
           branch: gh-pages
